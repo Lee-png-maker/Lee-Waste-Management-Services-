@@ -1,2020 +1,1917 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Lee Waste Management Services</title>
+<title>Lee Pool Repair & Maintenance Services</title>
 
-<meta name="description" content="Lee Waste Management Services provides waste removal, garden waste removal, building rubble removal, recycling, site clean-ups and commercial waste solutions.">
+<meta name="description" content="Lee Pool Repair & Maintenance Services. Pool cleaning, maintenance, repairs, pumps, filters, green pool recovery and water care.">
+<meta name="theme-color" content="#0077b6">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
 
 <style>
+:root{
+    --blue:#0077b6;
+    --dark:#023047;
+    --cyan:#00b4d8;
+    --light:#eaf9ff;
+    --white:#ffffff;
+    --text:#17324d;
+    --muted:#668096;
+    --green:#25d366;
+    --shadow:0 12px 35px rgba(0,55,90,.12);
+    --radius:20px;
+}
 
 *{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-  scroll-behavior:smooth;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
 }
 
 body{
-  font-family:Arial,Helvetica,sans-serif;
-  background:#f4f7f5;
-  color:#14231b;
-  line-height:1.6;
+    font-family:"Inter",sans-serif;
+    color:var(--text);
+    background:#fff;
+    line-height:1.6;
 }
 
 a{
-  text-decoration:none;
-  color:inherit;
+    text-decoration:none;
+    color:inherit;
+}
+
+img{
+    max-width:100%;
+    display:block;
 }
 
 .container{
-  width:92%;
-  max-width:1150px;
-  margin:auto;
+    width:min(1150px,92%);
+    margin:auto;
 }
 
 /* HEADER */
-
 header{
-  background:#08150e;
-  color:white;
-  position:sticky;
-  top:0;
-  z-index:1000;
-  box-shadow:0 3px 18px rgba(0,0,0,.25);
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:rgba(255,255,255,.96);
+    backdrop-filter:blur(12px);
+    box-shadow:0 3px 18px rgba(0,0,0,.08);
 }
 
-.nav{
-  min-height:72px;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
+.navbar{
+    min-height:76px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:20px;
 }
 
 .logo{
-  font-size:21px;
-  font-weight:900;
+    display:flex;
+    align-items:center;
+    gap:12px;
 }
 
-.logo span{
-  color:#55c95b;
+.logo-icon{
+    width:46px;
+    height:46px;
+    border-radius:14px;
+    background:linear-gradient(135deg,var(--blue),var(--cyan));
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#fff;
+    font-size:24px;
+    box-shadow:0 8px 20px rgba(0,119,182,.25);
 }
 
-nav{
-  display:flex;
-  align-items:center;
-  gap:24px;
+.logo-text strong{
+    display:block;
+    font-family:"Poppins",sans-serif;
+    font-size:18px;
+    color:var(--dark);
+    line-height:1.15;
 }
 
-nav a{
-  font-size:14px;
-  font-weight:700;
+.logo-text span{
+    font-size:11px;
+    color:var(--blue);
+    font-weight:700;
 }
 
-nav a:hover{
-  color:#55c95b;
+.nav-links{
+    display:flex;
+    align-items:center;
+    gap:22px;
+}
+
+.nav-links a{
+    font-weight:600;
+    font-size:14px;
+    color:var(--dark);
+}
+
+.nav-links a:hover{
+    color:var(--blue);
+}
+
+.header-actions{
+    display:flex;
+    align-items:center;
+    gap:8px;
+}
+
+.phone-btn,
+.whatsapp-btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:8px;
+    padding:11px 15px;
+    border-radius:999px;
+    font-weight:800;
+    font-size:13px;
+}
+
+.phone-btn{
+    color:var(--blue);
+    background:var(--light);
+}
+
+.whatsapp-btn{
+    color:#fff;
+    background:var(--green);
+}
+
+.whatsapp-icon{
+    font-size:19px;
+    line-height:1;
 }
 
 .menu-btn{
-  display:none;
-  font-size:30px;
-  cursor:pointer;
+    display:none;
+    border:0;
+    background:var(--light);
+    color:var(--dark);
+    width:44px;
+    height:44px;
+    border-radius:12px;
+    font-size:23px;
 }
 
 /* HERO */
-
 .hero{
-  min-height:650px;
-  display:flex;
-  align-items:center;
-  color:white;
-
-  background:
-  linear-gradient(
-    rgba(4,18,10,.82),
-    rgba(4,18,10,.90)
-  ),
-  url("https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?auto=format&fit=crop&w=1800&q=85")
-  center/cover;
+    min-height:650px;
+    position:relative;
+    display:flex;
+    align-items:center;
+    background:
+        linear-gradient(90deg,rgba(2,48,71,.92),rgba(0,119,182,.68)),
+        url("https://images.unsplash.com/photo-1560089000-7433a4ebbd64?auto=format&fit=crop&w=1800&q=85")
+        center/cover no-repeat;
+    color:white;
 }
 
 .hero-content{
-  max-width:780px;
+    max-width:760px;
+    padding:85px 0;
 }
 
 .badge{
-  display:inline-block;
-  color:#70df75;
-  border:1px solid #3b9942;
-  background:rgba(70,190,80,.10);
-  padding:8px 15px;
-  border-radius:30px;
-  font-size:13px;
-  font-weight:900;
-  margin-bottom:20px;
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    background:rgba(255,255,255,.14);
+    border:1px solid rgba(255,255,255,.25);
+    padding:9px 15px;
+    border-radius:999px;
+    font-size:13px;
+    font-weight:700;
+    margin-bottom:20px;
 }
 
 .hero h1{
-  font-size:58px;
-  line-height:1.03;
-  margin-bottom:20px;
+    font-family:"Poppins",sans-serif;
+    font-size:clamp(38px,6vw,68px);
+    line-height:1.05;
+    margin-bottom:20px;
 }
 
 .hero h1 span{
-  color:#5ed665;
+    color:#7de9ff;
 }
 
 .hero p{
-  color:#d6e4d9;
-  font-size:18px;
-  max-width:700px;
-  margin-bottom:30px;
+    max-width:650px;
+    font-size:18px;
+    color:#e7f8ff;
+    margin-bottom:30px;
 }
 
-.buttons{
-  display:flex;
-  flex-wrap:wrap;
-  gap:12px;
+.hero-buttons{
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
 }
 
 .btn{
-  display:inline-block;
-  padding:14px 23px;
-  border-radius:8px;
-  font-weight:900;
-  border:0;
-  cursor:pointer;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:9px;
+    padding:14px 21px;
+    border-radius:12px;
+    font-weight:800;
+    border:0;
+    cursor:pointer;
+    transition:.2s;
 }
 
-.btn-green{
-  background:#55cf5c;
-  color:#061108;
+.btn:hover{
+    transform:translateY(-2px);
 }
 
-.btn-green:hover{
-  background:#78e27d;
+.btn-primary{
+    background:white;
+    color:var(--dark);
 }
 
-.btn-white{
-  background:white;
-  color:#08150e;
+.btn-whatsapp{
+    background:var(--green);
+    color:white;
 }
 
-.btn-white:hover{
-  background:#e9efeb;
+.btn-blue{
+    background:var(--blue);
+    color:white;
+}
+
+.btn-light{
+    background:var(--light);
+    color:var(--dark);
 }
 
 /* STATS */
-
 .stats{
-  background:white;
-  padding:28px 0;
-  box-shadow:0 4px 20px rgba(0,0,0,.06);
+    margin-top:-55px;
+    position:relative;
+    z-index:5;
 }
 
 .stats-grid{
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  gap:15px;
-  text-align:center;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:18px;
+}
+
+.stat{
+    background:#fff;
+    padding:25px;
+    border-radius:18px;
+    box-shadow:var(--shadow);
+    text-align:center;
+}
+
+.stat-icon{
+    font-size:30px;
+    margin-bottom:5px;
 }
 
 .stat strong{
-  display:block;
-  color:#23962e;
-  font-size:22px;
+    display:block;
+    font-size:18px;
+    color:var(--dark);
 }
 
 .stat span{
-  color:#68746d;
-  font-size:13px;
+    color:var(--muted);
+    font-size:13px;
 }
 
-/* GENERAL */
-
+/* SECTIONS */
 section{
-  padding:80px 0;
+    padding:85px 0;
 }
 
-.section-title{
-  text-align:center;
-  margin-bottom:45px;
+.section-heading{
+    text-align:center;
+    max-width:720px;
+    margin:0 auto 45px;
 }
 
-.section-title small{
-  color:#269532;
-  font-weight:900;
-  text-transform:uppercase;
-  letter-spacing:1px;
+.section-heading .eyebrow{
+    color:var(--blue);
+    font-weight:800;
+    text-transform:uppercase;
+    letter-spacing:1.5px;
+    font-size:12px;
 }
 
-.section-title h2{
-  font-size:38px;
-  margin:8px 0;
+.section-heading h2{
+    font-family:"Poppins",sans-serif;
+    color:var(--dark);
+    font-size:clamp(30px,4vw,44px);
+    margin:8px 0 12px;
 }
 
-.section-title p{
-  max-width:720px;
-  margin:auto;
-  color:#69766e;
+.section-heading p{
+    color:var(--muted);
 }
 
 /* SERVICES */
-
 .services{
-  background:white;
+    background:#f7fcff;
 }
 
 .service-grid{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:22px;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
 }
 
-.card{
-  background:white;
-  border:1px solid #dfe8e1;
-  border-radius:16px;
-  padding:28px;
-  box-shadow:0 7px 25px rgba(0,0,0,.05);
-  transition:.25s;
+.service-card{
+    background:#fff;
+    padding:27px;
+    border-radius:var(--radius);
+    box-shadow:var(--shadow);
+    border:1px solid #e3f4fa;
+    transition:.25s;
 }
 
-.card:hover{
-  transform:translateY(-5px);
-  box-shadow:0 14px 30px rgba(0,0,0,.10);
+.service-card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 18px 40px rgba(0,80,120,.16);
 }
 
-.icon{
-  width:58px;
-  height:58px;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  background:#e9f8eb;
-  border-radius:13px;
-  font-size:29px;
-  margin-bottom:17px;
+.service-icon{
+    width:58px;
+    height:58px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:var(--light);
+    border-radius:16px;
+    font-size:28px;
+    margin-bottom:17px;
 }
 
-.card h3{
-  font-size:20px;
-  margin-bottom:8px;
+.service-card h3{
+    color:var(--dark);
+    margin-bottom:8px;
 }
 
-.card p{
-  color:#68756d;
-  font-size:14px;
-}
-
-/* DARK SECTION */
-
-.dark{
-  background:#08150e;
-  color:white;
-}
-
-.waste-grid{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:30px;
-  align-items:center;
-}
-
-.waste-box{
-  background:#10251a;
-  border:1px solid #284633;
-  border-radius:17px;
-  padding:32px;
-}
-
-.waste-box h3{
-  font-size:29px;
-  margin-bottom:13px;
-}
-
-.waste-box p{
-  color:#c8d7cc;
-}
-
-.check-list{
-  list-style:none;
-  margin-top:20px;
-}
-
-.check-list li{
-  margin:13px 0;
-  color:#dce8df;
-}
-
-.check-list li::before{
-  content:"✓";
-  color:#62d968;
-  font-weight:900;
-  margin-right:10px;
-}
-
-/* WASTE TYPES */
-
-.types{
-  background:#edf4ef;
-}
-
-.type-grid{
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  gap:18px;
-}
-
-.type{
-  background:white;
-  padding:27px 18px;
-  text-align:center;
-  border-radius:15px;
-  border:1px solid #dce6de;
-}
-
-.type-icon{
-  font-size:38px;
-  margin-bottom:10px;
-}
-
-.type h3{
-  font-size:17px;
-  margin-bottom:6px;
-}
-
-.type p{
-  font-size:13px;
-  color:#69766e;
-}
-
-/* PROCESS */
-
-.process{
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  gap:20px;
-}
-
-.step{
-  background:white;
-  border:1px solid #dce6df;
-  border-radius:15px;
-  padding:26px;
-}
-
-.number{
-  font-size:30px;
-  font-weight:900;
-  color:#2c9c37;
-}
-
-.step h3{
-  margin:7px 0;
-}
-
-.step p{
-  color:#69756d;
-  font-size:14px;
-}
-
-/* PRICING */
-
-.price-grid{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:20px;
-}
-
-.price-card{
-  background:white;
-  border:1px solid #dfe8e1;
-  border-radius:16px;
-  padding:30px;
-  text-align:center;
-  box-shadow:0 7px 25px rgba(0,0,0,.05);
-}
-
-.price-card h3{
-  margin-bottom:10px;
+.service-card p{
+    color:var(--muted);
+    font-size:14px;
+    margin-bottom:15px;
 }
 
 .price{
-  color:#269532;
-  font-size:22px;
-  font-weight:900;
-  margin-bottom:12px;
-}
-
-.price-card p{
-  color:#68756d;
-  font-size:14px;
-}
-
-/* GALLERY */
-
-.gallery{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:15px;
-}
-
-.gallery img{
-  width:100%;
-  height:245px;
-  object-fit:cover;
-  border-radius:15px;
+    color:var(--blue);
+    font-weight:800;
 }
 
 /* ABOUT */
-
-.about{
-  background:white;
-}
-
 .about-grid{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:35px;
-  align-items:center;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
+    align-items:center;
 }
 
-.about-image img{
-  width:100%;
-  height:430px;
-  object-fit:cover;
-  border-radius:18px;
+.about-image{
+    min-height:450px;
+    border-radius:28px;
+    background:
+        linear-gradient(135deg,rgba(0,119,182,.15),rgba(0,180,216,.05)),
+        url("https://images.unsplash.com/photo-1572331165267-854da2b10ccc?auto=format&fit=crop&w=1200&q=85")
+        center/cover;
+    box-shadow:var(--shadow);
 }
 
-.about-text h2{
-  font-size:38px;
-  margin:8px 0 17px;
+.about-content .eyebrow{
+    color:var(--blue);
+    font-weight:800;
+    text-transform:uppercase;
+    letter-spacing:1px;
+    font-size:12px;
 }
 
-.about-text p{
-  color:#68756d;
-  margin-bottom:15px;
+.about-content h2{
+    font-family:"Poppins",sans-serif;
+    color:var(--dark);
+    font-size:42px;
+    line-height:1.15;
+    margin:10px 0 18px;
+}
+
+.about-content p{
+    color:var(--muted);
+    margin-bottom:16px;
+}
+
+.check-list{
+    list-style:none;
+    margin:22px 0;
+}
+
+.check-list li{
+    margin:12px 0;
+    font-weight:600;
+}
+
+.check-list li::before{
+    content:"✓";
+    color:#00a86b;
+    font-weight:900;
+    margin-right:10px;
+}
+
+/* FEATURES */
+.features{
+    background:linear-gradient(135deg,#023047,#0077b6);
+    color:white;
+}
+
+.feature-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:18px;
+}
+
+.feature{
+    background:rgba(255,255,255,.1);
+    border:1px solid rgba(255,255,255,.16);
+    padding:25px;
+    border-radius:18px;
+}
+
+.feature-icon{
+    font-size:30px;
+    margin-bottom:12px;
+}
+
+.feature h3{
+    margin-bottom:7px;
+}
+
+.feature p{
+    font-size:13px;
+    color:#dff8ff;
+}
+
+/* PRICE */
+.price-section{
+    background:#fff;
+}
+
+.price-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:18px;
+}
+
+.price-card{
+    padding:25px;
+    background:#f7fcff;
+    border:1px solid #dceff6;
+    border-radius:18px;
+    text-align:center;
+}
+
+.price-card span{
+    font-size:28px;
+}
+
+.price-card h3{
+    color:var(--dark);
+    margin:10px 0 5px;
+}
+
+.price-card strong{
+    color:var(--blue);
+    font-size:20px;
+}
+
+.price-card p{
+    font-size:13px;
+    color:var(--muted);
+}
+
+/* HOW */
+.how{
+    background:#f7fcff;
+}
+
+.steps{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+
+.step{
+    position:relative;
+    background:white;
+    padding:25px;
+    border-radius:18px;
+    box-shadow:var(--shadow);
+}
+
+.step-number{
+    width:42px;
+    height:42px;
+    border-radius:50%;
+    background:var(--blue);
+    color:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-weight:900;
+    margin-bottom:14px;
+}
+
+.step h3{
+    color:var(--dark);
+    margin-bottom:7px;
+}
+
+.step p{
+    color:var(--muted);
+    font-size:13px;
+}
+
+/* GALLERY */
+.gallery-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:18px;
+}
+
+.gallery-item{
+    height:260px;
+    border-radius:18px;
+    overflow:hidden;
+    position:relative;
+    background:#dff7ff;
+}
+
+.gallery-item img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition:.3s;
+}
+
+.gallery-item:hover img{
+    transform:scale(1.05);
+}
+
+.gallery-label{
+    position:absolute;
+    bottom:12px;
+    left:12px;
+    right:12px;
+    background:rgba(2,48,71,.82);
+    color:white;
+    padding:10px 12px;
+    border-radius:10px;
+    font-size:13px;
+    font-weight:700;
 }
 
 /* BOOKING */
-
 .booking{
-  background:#edf4ef;
+    background:#eefaff;
 }
 
-.form-box{
-  max-width:900px;
-  margin:auto;
-  background:white;
-  padding:35px;
-  border-radius:18px;
-  box-shadow:0 10px 35px rgba(0,0,0,.08);
+.booking-wrap{
+    display:grid;
+    grid-template-columns:.8fr 1.2fr;
+    gap:30px;
+    align-items:start;
+}
+
+.booking-info{
+    background:linear-gradient(145deg,#023047,#0077b6);
+    color:#fff;
+    padding:35px;
+    border-radius:25px;
+    min-height:100%;
+}
+
+.booking-info h2{
+    font-family:"Poppins",sans-serif;
+    font-size:35px;
+    margin-bottom:15px;
+}
+
+.booking-info p{
+    color:#dff8ff;
+    margin-bottom:22px;
+}
+
+.contact-line{
+    display:flex;
+    align-items:flex-start;
+    gap:12px;
+    padding:13px 0;
+    border-bottom:1px solid rgba(255,255,255,.15);
+}
+
+.contact-line:last-child{
+    border-bottom:0;
+}
+
+.contact-line span{
+    font-size:23px;
+}
+
+.contact-line strong{
+    display:block;
+}
+
+.contact-line small{
+    color:#d5f5ff;
+}
+
+.booking-form{
+    background:#fff;
+    padding:32px;
+    border-radius:25px;
+    box-shadow:var(--shadow);
 }
 
 .form-grid{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:17px;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:15px;
 }
 
 .field{
-  display:flex;
-  flex-direction:column;
+    display:flex;
+    flex-direction:column;
+    gap:6px;
 }
 
-.full{
-  grid-column:1/-1;
+.field.full{
+    grid-column:1/-1;
 }
 
 .field label{
-  font-size:13px;
-  font-weight:900;
-  margin-bottom:6px;
+    font-size:13px;
+    font-weight:800;
+    color:var(--dark);
 }
 
 .field input,
 .field select,
 .field textarea{
-  padding:13px;
-  border:1px solid #d4dfd7;
-  border-radius:8px;
-  font-size:14px;
-  outline:none;
+    width:100%;
+    padding:13px 14px;
+    border:1px solid #d7e9ef;
+    border-radius:11px;
+    outline:none;
+    font-family:inherit;
+    font-size:14px;
+    background:#fbfeff;
 }
 
 .field input:focus,
 .field select:focus,
 .field textarea:focus{
-  border-color:#3baa43;
+    border-color:var(--blue);
+    box-shadow:0 0 0 3px rgba(0,119,182,.08);
 }
 
 .field textarea{
-  min-height:130px;
-  resize:vertical;
+    min-height:120px;
+    resize:vertical;
 }
 
-.submit{
-  width:100%;
-  margin-top:20px;
-  border:0;
-  padding:16px;
-  border-radius:9px;
-  background:#55cf5c;
-  color:#061108;
-  font-size:16px;
-  font-weight:900;
-  cursor:pointer;
+.form-buttons{
+    margin-top:18px;
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+}
+
+.form-note{
+    margin-top:12px;
+    color:var(--muted);
+    font-size:12px;
 }
 
 /* PAYMENT */
-
 .payment{
-  background:white;
+    padding-top:20px;
 }
 
 .payment-box{
-  max-width:800px;
-  margin:auto;
-  background:#08150e;
-  color:white;
-  text-align:center;
-  padding:45px 25px;
-  border-radius:20px;
+    max-width:850px;
+    margin:auto;
+    background:linear-gradient(135deg,#fff,#eefaff);
+    border:1px solid #d7eff7;
+    border-radius:25px;
+    padding:35px;
+    text-align:center;
+    box-shadow:var(--shadow);
 }
 
 .payment-box h2{
-  font-size:32px;
-  margin-bottom:12px;
+    font-family:"Poppins",sans-serif;
+    color:var(--dark);
+    margin-bottom:10px;
 }
 
 .payment-box p{
-  color:#c4d3c9;
-  margin-bottom:25px;
+    color:var(--muted);
+    margin-bottom:20px;
 }
 
-/* FAQ */
-
-.faq{
-  max-width:850px;
-  margin:auto;
+/* CTA */
+.cta{
+    padding:65px 0;
+    background:linear-gradient(135deg,#00b4d8,#0077b6);
+    color:white;
+    text-align:center;
 }
 
-details{
-  background:white;
-  border:1px solid #dce6df;
-  border-radius:10px;
-  padding:18px 20px;
-  margin-bottom:12px;
+.cta h2{
+    font-family:"Poppins",sans-serif;
+    font-size:42px;
+    margin-bottom:12px;
 }
 
-summary{
-  cursor:pointer;
-  font-weight:900;
-}
-
-details p{
-  color:#69756d;
-  padding-top:12px;
+.cta p{
+    max-width:650px;
+    margin:0 auto 25px;
+    color:#e7fbff;
 }
 
 /* CONTACT */
-
 .contact{
-  background:#08150e;
-  color:white;
+    background:#f7fcff;
 }
 
-.contact-grid{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:20px;
+.contact-card{
+    background:#fff;
+    border-radius:25px;
+    box-shadow:var(--shadow);
+    padding:35px;
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    gap:20px;
 }
 
 .contact-box{
-  border:1px solid #294533;
-  border-radius:15px;
-  padding:28px;
-  text-align:center;
+    padding:20px;
+    border-radius:16px;
+    background:#f5fbfe;
 }
 
-.contact-box div{
-  font-size:30px;
-  margin-bottom:9px;
+.contact-box span{
+    font-size:27px;
 }
 
-.contact-box p{
-  color:#c3d2c8;
+.contact-box h3{
+    color:var(--dark);
+    margin:7px 0;
 }
 
+.contact-box p,
 .contact-box a{
-  color:#68d96e;
-  font-weight:900;
+    color:var(--muted);
+    font-size:14px;
+}
+
+.contact-box a:hover{
+    color:var(--blue);
 }
 
 /* FOOTER */
-
 footer{
-  background:#030a05;
-  color:#9fac9f;
-  text-align:center;
-  padding:26px;
-  font-size:13px;
+    background:#021d2c;
+    color:white;
+    padding:40px 0 25px;
 }
 
-footer strong{
-  color:white;
+.footer-grid{
+    display:grid;
+    grid-template-columns:2fr 1fr 1fr;
+    gap:35px;
 }
 
-/* WHATSAPP */
+footer h3{
+    margin-bottom:12px;
+}
 
-.whatsapp{
-  position:fixed;
-  right:20px;
-  bottom:20px;
-  width:58px;
-  height:58px;
-  border-radius:50%;
-  background:#25d366;
-  color:white;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  font-size:29px;
-  z-index:2000;
-  box-shadow:0 5px 20px rgba(0,0,0,.3);
+footer p,
+footer a{
+    color:#a9c5d3;
+    font-size:14px;
+}
+
+footer a:hover{
+    color:#fff;
+}
+
+.footer-links{
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+}
+
+.footer-bottom{
+    margin-top:30px;
+    padding-top:20px;
+    border-top:1px solid rgba(255,255,255,.1);
+    text-align:center;
+    color:#88a5b3;
+    font-size:12px;
+}
+
+/* FLOATING WHATSAPP */
+.floating-whatsapp{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    z-index:2000;
+    width:62px;
+    height:62px;
+    border-radius:50%;
+    background:var(--green);
+    color:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:31px;
+    box-shadow:0 8px 25px rgba(37,211,102,.4);
+    border:3px solid #fff;
+}
+
+.floating-whatsapp:hover{
+    transform:scale(1.06);
 }
 
 /* MOBILE */
+@media(max-width:900px){
 
-@media(max-width:850px){
+    .nav-links,
+    .header-actions .phone-btn{
+        display:none;
+    }
 
-  nav{
-    display:none;
-    position:absolute;
-    top:72px;
-    left:0;
-    right:0;
-    background:#08150e;
-    flex-direction:column;
-    padding:20px;
-    gap:18px;
-  }
+    .menu-btn{
+        display:flex;
+        align-items:center;
+        justify-content:center;
+    }
 
-  nav.active{
-    display:flex;
-  }
+    .navbar{
+        position:relative;
+    }
 
-  .menu-btn{
-    display:block;
-  }
+    .nav-links.mobile-open{
+        display:flex;
+        position:absolute;
+        top:76px;
+        left:0;
+        right:0;
+        background:#fff;
+        padding:20px;
+        flex-direction:column;
+        align-items:flex-start;
+        box-shadow:0 15px 30px rgba(0,0,0,.1);
+        border-radius:0 0 18px 18px;
+    }
 
-  .hero{
-    min-height:600px;
-  }
+    .stats-grid,
+    .service-grid,
+    .feature-grid,
+    .price-grid,
+    .steps{
+        grid-template-columns:repeat(2,1fr);
+    }
 
-  .hero h1{
-    font-size:42px;
-  }
+    .about-grid,
+    .booking-wrap{
+        grid-template-columns:1fr;
+    }
 
-  .stats-grid{
-    grid-template-columns:1fr 1fr;
-  }
+    .contact-card{
+        grid-template-columns:1fr;
+    }
 
-  .service-grid,
-  .price-grid,
-  .gallery{
-    grid-template-columns:1fr;
-  }
-
-  .waste-grid,
-  .about-grid{
-    grid-template-columns:1fr;
-  }
-
-  .type-grid{
-    grid-template-columns:1fr 1fr;
-  }
-
-  .process{
-    grid-template-columns:1fr 1fr;
-  }
-
-  .contact-grid{
-    grid-template-columns:1fr;
-  }
-
-  .form-grid{
-    grid-template-columns:1fr;
-  }
-
-  .full{
-    grid-column:auto;
-  }
+    .footer-grid{
+        grid-template-columns:1fr 1fr;
+    }
 }
 
-@media(max-width:500px){
+@media(max-width:600px){
 
-  .hero h1{
-    font-size:35px;
-  }
+    section{
+        padding:65px 0;
+    }
 
-  .section-title h2{
-    font-size:30px;
-  }
+    .hero{
+        min-height:620px;
+    }
 
-  .type-grid,
-  .process{
-    grid-template-columns:1fr;
-  }
+    .hero-content{
+        padding:70px 0;
+    }
 
-  .form-box{
-    padding:22px;
-  }
+    .hero h1{
+        font-size:39px;
+    }
+
+    .hero p{
+        font-size:16px;
+    }
+
+    .hero-buttons{
+        flex-direction:column;
+        align-items:stretch;
+    }
+
+    .hero-buttons .btn{
+        width:100%;
+    }
+
+    .stats{
+        margin-top:-35px;
+    }
+
+    .stats-grid,
+    .service-grid,
+    .feature-grid,
+    .price-grid,
+    .steps,
+    .gallery-grid{
+        grid-template-columns:1fr;
+    }
+
+    .about-content h2{
+        font-size:32px;
+    }
+
+    .about-image{
+        min-height:330px;
+    }
+
+    .form-grid{
+        grid-template-columns:1fr;
+    }
+
+    .field.full{
+        grid-column:auto;
+    }
+
+    .booking-info,
+    .booking-form,
+    .payment-box,
+    .contact-card{
+        padding:24px;
+    }
+
+    .footer-grid{
+        grid-template-columns:1fr;
+    }
+
+    .logo-text strong{
+        font-size:15px;
+    }
+
+    .header-actions .whatsapp-btn{
+        padding:10px 12px;
+    }
+
+    .header-actions .whatsapp-btn span:not(.whatsapp-icon){
+        display:none;
+    }
 }
-
 </style>
 </head>
 
 <body>
 
-
 <!-- HEADER -->
-
 <header>
+    <div class="container navbar">
 
-<div class="container nav">
+        <a href="#home" class="logo">
+            <div class="logo-icon">🏊</div>
+            <div class="logo-text">
+                <strong>Lee Pool Services</strong>
+                <span>REPAIR & MAINTENANCE</span>
+            </div>
+        </a>
 
-<div class="logo">
-LEE <span>WASTE MANAGEMENT</span>
-</div>
+        <nav class="nav-links" id="navLinks">
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#about">About</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#booking">Book</a>
+            <a href="#contact">Contact</a>
+        </nav>
 
-<div class="menu-btn" onclick="toggleMenu()">☰</div>
+        <div class="header-actions">
 
-<nav id="menu">
+            <a class="phone-btn" href="tel:0688685355">
+                📞 068 868 5355
+            </a>
 
-<a href="#home">Home</a>
-<a href="#services">Services</a>
-<a href="#waste">Waste Types</a>
-<a href="#process">How It Works</a>
-<a href="#gallery">Gallery</a>
-<a href="#quote">Get Quote</a>
-<a href="#contact">Contact</a>
+            <a class="whatsapp-btn"
+               href="https://wa.me/27688685355"
+               target="_blank"
+               rel="noopener">
+                <span class="whatsapp-icon">💬</span>
+                <span>WhatsApp</span>
+            </a>
 
-</nav>
+            <button class="menu-btn" id="menuBtn" aria-label="Open menu">
+                ☰
+            </button>
 
-</div>
-
+        </div>
+    </div>
 </header>
 
 
 <!-- HERO -->
-
 <section class="hero" id="home">
+    <div class="container">
+        <div class="hero-content">
 
-<div class="container">
+            <div class="badge">
+                💧 Pool Repair • Cleaning • Maintenance
+            </div>
 
-<div class="hero-content">
+            <h1>
+                Keep Your Pool
+                <span>Clean & Ready.</span>
+            </h1>
 
-<div class="badge">
-♻️ WASTE REMOVAL • RECYCLING • CLEAN-UP
-</div>
+            <p>
+                Professional pool cleaning, maintenance and repair services
+                for homes and businesses. Get your pool looking better and
+                working properly.
+            </p>
 
-<h1>
-Clear The Waste.
-<span>Keep Your Space Clean.</span>
-</h1>
+            <div class="hero-buttons">
 
-<p>
-Lee Waste Management Services provides practical waste
-removal and clean-up solutions for homes, businesses,
-construction projects and other properties.
-</p>
+                <a class="btn btn-primary" href="#booking">
+                    📅 Book a Pool Service
+                </a>
 
-<div class="buttons">
+                <a class="btn btn-whatsapp"
+                   href="https://wa.me/27688685355?text=Hi%20Lee%20Pool%20Repair%20%26%20Maintenance%20Services%2C%20I%20would%20like%20to%20enquire%20about%20a%20pool%20service."
+                   target="_blank"
+                   rel="noopener">
+                    💬 WhatsApp Us
+                </a>
 
-<a
-class="btn btn-green"
-href="https://wa.me/27688585355?text=Hello%20Lee%20Waste%20Management%2C%20I%20would%20like%20a%20waste%20removal%20quotation.">
+            </div>
 
-Request A Quote
-
-</a>
-
-<a
-class="btn btn-white"
-href="#services">
-
-View Services
-
-</a>
-
-</div>
-
-</div>
-
-</div>
-
+        </div>
+    </div>
 </section>
 
 
 <!-- STATS -->
-
 <div class="stats">
+    <div class="container stats-grid">
 
-<div class="container stats-grid">
+        <div class="stat">
+            <div class="stat-icon">💦</div>
+            <strong>Pool Cleaning</strong>
+            <span>Regular and once-off cleaning</span>
+        </div>
 
-<div class="stat">
-<strong>♻️ Recycling</strong>
-<span>Recyclable Waste</span>
-</div>
+        <div class="stat">
+            <div class="stat-icon">🔧</div>
+            <strong>Pool Repairs</strong>
+            <span>Equipment and maintenance enquiries</span>
+        </div>
 
-<div class="stat">
-<strong>🌿 Garden</strong>
-<span>Green Waste</span>
-</div>
+        <div class="stat">
+            <div class="stat-icon">📱</div>
+            <strong>Easy Booking</strong>
+            <span>Book directly through WhatsApp</span>
+        </div>
 
-<div class="stat">
-<strong>🧱 Rubble</strong>
-<span>Building Waste</span>
-</div>
-
-<div class="stat">
-<strong>🚛 Removal</strong>
-<span>Waste Collection</span>
-</div>
-
-</div>
-
+    </div>
 </div>
 
 
 <!-- SERVICES -->
-
 <section class="services" id="services">
 
-<div class="container">
-
-<div class="section-title">
-
-<small>Our Services</small>
-
-<h2>Waste Management Solutions</h2>
-
-<p>
-From a household clear-out to construction waste,
-tell us what needs to be removed and we can discuss
-the appropriate service.
-</p>
-
-</div>
-
-
-<div class="service-grid">
-
-
-<div class="card">
-
-<div class="icon">🏠</div>
-
-<h3>Domestic Waste Removal</h3>
-
-<p>
-Removal enquiries for household rubbish, unwanted items,
-boxes, bags and general waste.
-</p>
-
-</div>
-
-
-<div class="card">
-
-<div class="icon">🌿</div>
-
-<h3>Garden Waste Removal</h3>
-
-<p>
-Removal of grass, leaves, branches, tree cuttings and
-other garden refuse.
-</p>
-
-</div>
-
-
-<div class="card">
-
-<div class="icon">🧱</div>
-
-<h3>Building Rubble</h3>
-
-<p>
-Removal enquiries for bricks, concrete, tiles and
-other non-hazardous building rubble.
-</p>
-
-</div>
-
-
-<div class="card">
-
-<div class="icon">🚛</div>
-
-<h3>Bulk Waste Removal</h3>
-
-<p>
-Clear-outs involving larger quantities of waste and
-unwanted materials.
-</p>
-
-</div>
-
-
-<div class="card">
-
-<div class="icon">🏢</div>
-
-<h3>Commercial Waste</h3>
-
-<p>
-Waste removal enquiries for offices, shops, businesses
-and other commercial properties.
-</p>
-
-</div>
-
-
-<div class="card">
-
-<div class="icon">♻️</div>
-
-<h3>Recycling Collection</h3>
-
-<p>
-Collection enquiries for recyclable materials such as
-paper, cardboard, plastics, glass and metals.
-</p>
-
-</div>
-
-
-<div class="card">
-
-<div class="icon">🧹</div>
-
-<h3>Site Clean-Up</h3>
-
-<p>
-Post-renovation, property clean-up and waste clearing
-services.
-</p>
-
-</div>
-
-
-<div class="card">
-
-<div class="icon">📦</div>
-
-<h3>Move-Out Clear-Outs</h3>
-
-<p>
-Waste removal for homes, offices, tenants and property
-clear-outs.
-</p>
-
-</div>
-
-
-<div class="card">
-
-<div class="icon">🗑️</div>
-
-<h3>Skip Bin Enquiries</h3>
-
-<p>
-Ask about skip-bin requirements for renovations,
-construction projects and large clean-ups.
-</p>
-
-</div>
-
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- WASTE MANAGEMENT -->
-
-<section class="dark" id="waste">
-
-<div class="container">
-
-<div class="section-title">
-
-<small style="color:#67d96e;">
-Waste Streams
-</small>
-
-<h2>Different Waste. Different Solutions.</h2>
-
-<p style="color:#c5d4ca;">
-Tell us what type of waste you have, how much there is
-and where it needs to be removed from.
-</p>
-
-</div>
-
-
-<div class="waste-grid">
-
-
-<div class="waste-box">
-
-<h3>♻️ General & Recyclable Waste</h3>
-
-<p>
-For suitable general waste and recyclable materials,
-we can discuss the collection requirements.
-</p>
-
-<ul class="check-list">
-
-<li>Household waste</li>
-<li>Cardboard</li>
-<li>Paper</li>
-<li>Plastic</li>
-<li>Glass</li>
-<li>Metal</li>
-
-</ul>
-
-</div>
-
-
-<div class="waste-box">
-
-<h3>🌿 Garden & Construction Waste</h3>
-
-<p>
-For larger clean-ups, garden projects and renovations,
-the waste type and volume help determine the appropriate
-removal solution.
-</p>
-
-<ul class="check-list">
-
-<li>Garden cuttings</li>
-<li>Branches</li>
-<li>Leaves</li>
-<li>Building rubble</li>
-<li>Renovation waste</li>
-<li>Site clean-up waste</li>
-
-</ul>
-
-</div>
-
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- PROPERTY TYPES -->
-
-<section class="types">
-
-<div class="container">
-
-<div class="section-title">
-
-<small>Who We Serve</small>
-
-<h2>Waste Services For Different Properties</h2>
-
-</div>
-
-
-<div class="type-grid">
-
-
-<div class="type">
-
-<div class="type-icon">🏠</div>
-
-<h3>Homes</h3>
-
-<p>
-Domestic rubbish and property clear-outs.
-</p>
-
-</div>
-
-
-<div class="type">
-
-<div class="type-icon">🏢</div>
-
-<h3>Businesses</h3>
-
-<p>
-Commercial waste collection enquiries.
-</p>
-
-</div>
-
-
-<div class="type">
-
-<div class="type-icon">🏗️</div>
-
-<h3>Construction</h3>
-
-<p>
-Rubble and project waste removal.
-</p>
-
-</div>
-
-
-<div class="type">
-
-<div class="type-icon">🏘️</div>
-
-<h3>Estates & Complexes</h3>
-
-<p>
-Waste removal and clean-up enquiries.
-</p>
-
-</div>
-
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- PROCESS -->
-
-<section id="process">
-
-<div class="container">
-
-<div class="section-title">
-
-<small>Simple Process</small>
-
-<h2>How Waste Removal Works</h2>
-
-<p>
-Send us the details and we can work out the best way
-to handle your request.
-</p>
-
-</div>
-
-
-<div class="process">
-
-
-<div class="step">
-
-<div class="number">01</div>
-
-<h3>Send Details</h3>
-
-<p>
-Tell us what waste you have and where it is located.
-</p>
-
-</div>
-
-
-<div class="step">
-
-<div class="number">02</div>
-
-<h3>Send A Photo</h3>
-
-<p>
-A photo of the waste can help us understand the size
-and type of job.
-</p>
-
-</div>
-
-
-<div class="step">
-
-<div class="number">03</div>
-
-<h3>Get A Quote</h3>
-
-<p>
-We discuss the requirements and provide a quotation.
-</p>
-
-</div>
-
-
-<div class="step">
-
-<div class="number">04</div>
-
-<h3>Removal</h3>
-
-<p>
-Once arranged, the waste is collected according to
-the agreed service.
-</p>
-
-</div>
-
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- PRICING -->
-
-<section class="services">
-
-<div class="container">
-
-<div class="section-title">
-
-<small>Pricing</small>
-
-<h2>Waste Removal Quote Guide</h2>
-
-<p>
-Waste removal prices depend on volume, waste type,
-loading requirements, distance and access.
-</p>
-
-</div>
-
-
-<div class="price-grid">
-
-
-<div class="price-card">
-
-<h3>Small Collection</h3>
-
-<div class="price">
-Quote Required
-</div>
-
-<p>
-Suitable for smaller amounts of general or household
-waste.
-</p>
-
-</div>
-
-
-<div class="price-card">
-
-<h3>Garden / Rubble</h3>
-
-<div class="price">
-Quote Required
-</div>
-
-<p>
-Pricing depends on the volume and type of garden or
-building waste.
-</p>
-
-</div>
-
-
-<div class="price-card">
-
-<h3>Commercial</h3>
-
-<div class="price">
-Custom Quote
-</div>
-
-<p>
-For businesses requiring once-off or recurring waste
-services.
-</p>
-
-</div>
-
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- GALLERY -->
-
-<section id="gallery">
-
-<div class="container">
-
-<div class="section-title">
-
-<small>Our Work</small>
-
-<h2>Waste Management Gallery</h2>
-
-<p>
-These are demonstration images. Replace them with
-photos of your own jobs as your business grows.
-</p>
-
-</div>
-
-
-<div class="gallery">
-
-<img
-src="https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?auto=format&fit=crop&w=1000&q=85"
-alt="Recycling waste">
-
-<img
-src="https://images.unsplash.com/photo-1611284446314-60a58ac0deb9?auto=format&fit=crop&w=1000&q=85"
-alt="Waste management">
-
-<img
-src="https://images.unsplash.com/photo-1604187351574-c75ca79f5807?auto=format&fit=crop&w=1000&q=85"
-alt="Waste collection">
-
-<img
-src="https://images.unsplash.com/photo-1610557892470-a56fef8e67e9?auto=format&fit=crop&w=1000&q=85"
-alt="Waste recycling">
-
-<img
-src="https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?auto=format&fit=crop&w=1000&q=85"
-alt="Recycling">
-
-<img
-src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=1000&q=85"
-alt="Environmental services">
-
-</div>
-
-</div>
-
+    <div class="container">
+
+        <div class="section-heading">
+            <div class="eyebrow">Our Services</div>
+            <h2>Complete Pool Care</h2>
+            <p>
+                From regular cleaning to equipment and pool maintenance,
+                choose the service your pool needs.
+            </p>
+        </div>
+
+        <div class="service-grid">
+
+            <div class="service-card">
+                <div class="service-icon">🧹</div>
+                <h3>Pool Cleaning</h3>
+                <p>
+                    Cleaning and removal of dirt, leaves and unwanted
+                    debris from your pool.
+                </p>
+                <div class="price">From R450</div>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">💧</div>
+                <h3>Pool Maintenance</h3>
+                <p>
+                    General pool care and maintenance to help keep your
+                    swimming pool in good condition.
+                </p>
+                <div class="price">Quote Required</div>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">🔧</div>
+                <h3>Pool Repairs</h3>
+                <p>
+                    Enquiries for pool problems, leaks, equipment and
+                    other repair requirements.
+                </p>
+                <div class="price">Quote Required</div>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">⚙️</div>
+                <h3>Pump Services</h3>
+                <p>
+                    Pool pump inspection, troubleshooting and service
+                    enquiries.
+                </p>
+                <div class="price">Quote Required</div>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">🌀</div>
+                <h3>Filter Services</h3>
+                <p>
+                    Filter inspection, cleaning and maintenance enquiries
+                    for better pool circulation.
+                </p>
+                <div class="price">Quote Required</div>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">🧪</div>
+                <h3>Water Care</h3>
+                <p>
+                    Pool water-care enquiries including cleaning and
+                    treatment requirements.
+                </p>
+                <div class="price">Quote Required</div>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">🟢</div>
+                <h3>Green Pool Recovery</h3>
+                <p>
+                    Help with pools that have become green or heavily
+                    contaminated.
+                </p>
+                <div class="price">Quote Required</div>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">🏊</div>
+                <h3>Residential Pools</h3>
+                <p>
+                    Pool care and maintenance enquiries for homes and
+                    residential properties.
+                </p>
+                <div class="price">Book an Assessment</div>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">🏢</div>
+                <h3>Business Pools</h3>
+                <p>
+                    Pool maintenance enquiries for selected business and
+                    commercial properties.
+                </p>
+                <div class="price">Quote Required</div>
+            </div>
+
+        </div>
+    </div>
 </section>
 
 
 <!-- ABOUT -->
+<section id="about">
 
-<section class="about">
+    <div class="container about-grid">
 
-<div class="container about-grid">
+        <div class="about-image"></div>
 
+        <div class="about-content">
 
-<div class="about-image">
+            <div class="eyebrow">About Lee Pool Services</div>
 
-<img
-src="https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?auto=format&fit=crop&w=1100&q=85"
-alt="Waste management">
+            <h2>
+                A Better Way To
+                Look After Your Pool
+            </h2>
 
-</div>
+            <p>
+                Lee Pool Repair & Maintenance Services provides practical
+                pool cleaning, maintenance and repair solutions for
+                residential and selected business customers.
+            </p>
 
+            <p>
+                Tell us what is happening with your pool and we can arrange
+                the appropriate service or assessment.
+            </p>
 
-<div class="about-text">
+            <ul class="check-list">
+                <li>Pool cleaning</li>
+                <li>Pool maintenance</li>
+                <li>Pump and filter enquiries</li>
+                <li>Pool repair enquiries</li>
+                <li>Green pool recovery</li>
+                <li>Easy WhatsApp booking</li>
+            </ul>
 
-<small style="color:#269532;font-weight:900;">
-ABOUT LEE WASTE MANAGEMENT
-</small>
+            <a class="btn btn-blue" href="#booking">
+                📅 Request a Service
+            </a>
 
-<h2>Cleaner Spaces. Better Waste Solutions.</h2>
+        </div>
 
-<p>
-Lee Waste Management Services provides practical waste
-removal and clean-up solutions for residential,
-commercial and project-based needs.
-</p>
-
-<p>
-Whether you are clearing a home, cleaning a garden,
-renovating a property or dealing with business waste,
-contact us with the details of the job.
-</p>
-
-<a
-class="btn btn-green"
-href="https://wa.me/27688585355?text=Hello%20Lee%20Waste%20Management%2C%20I%20would%20like%20to%20discuss%20a%20waste%20removal%20job.">
-
-Chat On WhatsApp
-
-</a>
-
-</div>
-
-</div>
-
+    </div>
 </section>
 
 
-<!-- QUOTE FORM -->
+<!-- FEATURES -->
+<section class="features">
+
+    <div class="container">
+
+        <div class="section-heading">
+            <div class="eyebrow" style="color:#7de9ff;">
+                Why Choose Us
+            </div>
+
+            <h2 style="color:#fff;">
+                Simple Pool Care
+            </h2>
+
+            <p style="color:#dff8ff;">
+                Easy communication and convenient service booking.
+            </p>
+        </div>
+
+        <div class="feature-grid">
+
+            <div class="feature">
+                <div class="feature-icon">📱</div>
+                <h3>Easy WhatsApp Booking</h3>
+                <p>
+                    Send your pool requirements directly through WhatsApp.
+                </p>
+            </div>
+
+            <div class="feature">
+                <div class="feature-icon">💧</div>
+                <h3>Pool Care</h3>
+                <p>
+                    Cleaning and maintenance services for different pool
+                    requirements.
+                </p>
+            </div>
+
+            <div class="feature">
+                <div class="feature-icon">🔧</div>
+                <h3>Repair Enquiries</h3>
+                <p>
+                    Contact us about equipment and pool problems that need
+                    attention.
+                </p>
+            </div>
+
+            <div class="feature">
+                <div class="feature-icon">💳</div>
+                <h3>Yoco Payment</h3>
+                <p>
+                    Payment can be arranged through our available Yoco
+                    payment option.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- PRICE GUIDE -->
+<section class="price-section">
+
+    <div class="container">
+
+        <div class="section-heading">
+            <div class="eyebrow">Starting Prices</div>
+            <h2>Simple Price Guide</h2>
+            <p>
+                Final pricing can depend on pool size, condition, equipment
+                and the work required.
+            </p>
+        </div>
+
+        <div class="price-grid">
+
+            <div class="price-card">
+                <span>🧹</span>
+                <h3>Pool Cleaning</h3>
+                <strong>R450+</strong>
+                <p>Starting price</p>
+            </div>
+
+            <div class="price-card">
+                <span>🔧</span>
+                <h3>Pool Repairs</h3>
+                <strong>Quote</strong>
+                <p>Assessment required</p>
+            </div>
+
+            <div class="price-card">
+                <span>⚙️</span>
+                <h3>Pump Services</h3>
+                <strong>Quote</strong>
+                <p>Assessment required</p>
+            </div>
+
+            <div class="price-card">
+                <span>🧪</span>
+                <h3>Water Care</h3>
+                <strong>Quote</strong>
+                <p>Pool condition dependent</p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
 
-<section class="booking" id="quote">
 
-<div class="container">
+<!-- HOW IT WORKS -->
+<section class="how">
 
-<div class="section-title">
+    <div class="container">
 
-<small>Request A Quote</small>
-
-<h2>Book Waste Removal</h2>
-
-<p>
-Complete the form and your request will open WhatsApp.
-You can also send us a photo of the waste.
-</p>
-
-</div>
-
-
-<div class="form-box">
-
-<form id="wasteForm">
-
-
-<div class="form-grid">
-
-
-<div class="field">
-
-<label>Your Name *</label>
-
-<input
-id="name"
-required
-placeholder="Full name">
-
-</div>
-
-
-<div class="field">
-
-<label>Phone Number *</label>
-
-<input
-id="phone"
-required
-placeholder="Phone number">
-
-</div>
-
-
-<div class="field">
-
-<label>Service Required *</label>
-
-<select id="service" required>
-
-<option value="">Select service</option>
-
-<option>Domestic Waste Removal</option>
-<option>Garden Waste Removal</option>
-<option>Building Rubble Removal</option>
-<option>Bulk Waste Removal</option>
-<option>Commercial Waste</option>
-<option>Recycling Collection</option>
-<option>Site Clean-Up</option>
-<option>Move-Out Clear-Out</option>
-<option>Skip Bin Enquiry</option>
-<option>Other</option>
-
-</select>
-
-</div>
-
-
-<div class="field">
-
-<label>Property Type *</label>
-
-<select id="property" required>
-
-<option value="">Select property</option>
-
-<option>House</option>
-<option>Apartment</option>
-<option>Office</option>
-<option>Shop</option>
-<option>Warehouse</option>
-<option>Construction Site</option>
-<option>Estate / Complex</option>
-<option>Other</option>
-
-</select>
-
-</div>
-
-
-<div class="field">
-
-<label>Preferred Date</label>
-
-<input
-type="date"
-id="date">
-
-</div>
-
-
-<div class="field">
-
-<label>Preferred Time</label>
-
-<input
-type="time"
-id="time">
-
-</div>
-
-
-<div class="field full">
-
-<label>Collection Address / Area *</label>
-
-<input
-id="address"
-required
-placeholder="Property address or area">
-
-</div>
-
-
-<div class="field">
-
-<label>Estimated Waste Size</label>
-
-<select id="size">
-
-<option value="">Select size</option>
-
-<option>Small amount</option>
-<option>1–2 loads</option>
-<option>Several loads</option>
-<option>Large clean-up</option>
-<option>Not sure</option>
-
-</select>
-
-</div>
-
-
-<div class="field">
-
-<label>Loading Required?</label>
-
-<select id="loading">
-
-<option>Not sure</option>
-<option>Customer will load</option>
-<option>Loading assistance required</option>
-
-</select>
-
-</div>
-
-
-<div class="field full">
-
-<label>Describe The Waste</label>
-
-<textarea
-id="details"
-placeholder="Example: Garden branches, bags of leaves and old household items."></textarea>
-
-</div>
-
-
-</div>
-
-
-<button
-class="submit"
-type="submit">
-
-🚛 SEND WASTE REMOVAL REQUEST ON WHATSAPP
-
-</button>
-
-
-</form>
-
-</div>
-
-</div>
-
+        <div class="section-heading">
+            <div class="eyebrow">How It Works</div>
+            <h2>Book In 4 Easy Steps</h2>
+        </div>
+
+        <div class="steps">
+
+            <div class="step">
+                <div class="step-number">1</div>
+                <h3>Tell Us</h3>
+                <p>
+                    Tell us what is wrong with your pool or what service
+                    you need.
+                </p>
+            </div>
+
+            <div class="step">
+                <div class="step-number">2</div>
+                <h3>Choose a Date</h3>
+                <p>
+                    Select your preferred date and time in the booking form.
+                </p>
+            </div>
+
+            <div class="step">
+                <div class="step-number">3</div>
+                <h3>Confirm</h3>
+                <p>
+                    Your request is sent directly to our WhatsApp.
+                </p>
+            </div>
+
+            <div class="step">
+                <div class="step-number">4</div>
+                <h3>Service</h3>
+                <p>
+                    Arrange the appropriate pool service or assessment.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- GALLERY -->
+<section id="gallery">
+
+    <div class="container">
+
+        <div class="section-heading">
+            <div class="eyebrow">Pool Care</div>
+            <h2>Our Work</h2>
+            <p>
+                Examples of pool environments and services we can assist
+                with.
+            </p>
+        </div>
+
+        <div class="gallery-grid">
+
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1576610616656-d3aa5d1f4534?auto=format&fit=crop&w=1000&q=85"
+                     alt="Clean swimming pool">
+                <div class="gallery-label">Pool Cleaning</div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1000&q=85"
+                     alt="Residential swimming pool">
+                <div class="gallery-label">Residential Pool Care</div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1615874694520-474822394e73?auto=format&fit=crop&w=1000&q=85"
+                     alt="Pool maintenance">
+                <div class="gallery-label">Pool Maintenance</div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- BOOKING -->
+<section class="booking" id="booking">
+
+    <div class="container booking-wrap">
+
+        <div class="booking-info">
+
+            <h2>Book Your Pool Service</h2>
+
+            <p>
+                Complete the form and your request will be prepared for
+                WhatsApp.
+            </p>
+
+            <div class="contact-line">
+                <span>📞</span>
+                <div>
+                    <strong>Call</strong>
+                    <small>068 868 5355</small>
+                </div>
+            </div>
+
+            <div class="contact-line">
+                <span>💬</span>
+                <div>
+                    <strong>WhatsApp</strong>
+                    <small>068 868 5355</small>
+                </div>
+            </div>
+
+            <div class="contact-line">
+                <span>💧</span>
+                <div>
+                    <strong>Services</strong>
+                    <small>Cleaning • Repairs • Maintenance</small>
+                </div>
+            </div>
+
+            <div class="contact-line">
+                <span>💳</span>
+                <div>
+                    <strong>Payment</strong>
+                    <small>Yoco payment option available</small>
+                </div>
+            </div>
+
+        </div>
+
+
+        <form class="booking-form" id="bookingForm">
+
+            <div class="form-grid">
+
+                <div class="field">
+                    <label for="name">Full Name *</label>
+                    <input id="name"
+                           name="name"
+                           type="text"
+                           placeholder="Your name"
+                           required>
+                </div>
+
+                <div class="field">
+                    <label for="phone">Phone Number *</label>
+                    <input id="phone"
+                           name="phone"
+                           type="tel"
+                           placeholder="Your phone number"
+                           required>
+                </div>
+
+                <div class="field">
+                    <label for="service">Pool Service *</label>
+                    <select id="service" name="service" required>
+                        <option value="">Select service</option>
+                        <option>Pool Cleaning</option>
+                        <option>Pool Maintenance</option>
+                        <option>Pool Repairs</option>
+                        <option>Pump Services</option>
+                        <option>Filter Services</option>
+                        <option>Water Care</option>
+                        <option>Green Pool Recovery</option>
+                        <option>Pool Equipment</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+
+                <div class="field">
+                    <label for="property">Property Type *</label>
+                    <select id="property" name="property" required>
+                        <option value="">Select property</option>
+                        <option>House</option>
+                        <option>Apartment</option>
+                        <option>Guest House</option>
+                        <option>Business</option>
+                        <option>Commercial Property</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+
+                <div class="field">
+                    <label for="date">Preferred Date *</label>
+                    <input id="date"
+                           name="date"
+                           type="date"
+                           required>
+                </div>
+
+                <div class="field">
+                    <label for="time">Preferred Time *</label>
+                    <input id="time"
+                           name="time"
+                           type="time"
+                           required>
+                </div>
+
+                <div class="field full">
+                    <label for="address">Address / Area *</label>
+                    <input id="address"
+                           name="address"
+                           type="text"
+                           placeholder="Where is the pool?"
+                           required>
+                </div>
+
+                <div class="field full">
+                    <label for="details">Pool Problem / Details</label>
+                    <textarea id="details"
+                              name="details"
+                              placeholder="Tell us about the pool, problem or service you need..."></textarea>
+                </div>
+
+            </div>
+
+            <div class="form-buttons">
+
+                <button type="submit" class="btn btn-whatsapp">
+                    💬 Send Booking via WhatsApp
+                </button>
+
+                <button type="reset" class="btn btn-light">
+                    Clear
+                </button>
+
+            </div>
+
+            <div class="form-note">
+                Your booking information will open in WhatsApp so you can
+                send the request directly.
+            </div>
+
+        </form>
+
+    </div>
 </section>
 
 
 <!-- PAYMENT -->
-
 <section class="payment">
 
-<div class="container">
+    <div class="container">
 
-<div class="payment-box">
+        <div class="payment-box">
 
-<h2>💳 Pay With Yoco</h2>
+            <div style="font-size:45px;">💳</div>
 
-<p>
-Once your quotation has been discussed and you are ready
-to make a payment, you can use our Yoco payment option.
-</p>
+            <h2>Pay Securely With Yoco</h2>
 
-<a
-class="btn btn-green"
-href="https://pay.yoco.com/lee-mobile-servises-and-constraction"
-target="_blank">
+            <p>
+                If you have been asked to make a payment, use the Yoco
+                payment option below.
+            </p>
 
-PAY WITH YOCO
+            <a class="btn btn-blue"
+               href="https://pay.yoco.com/lee-mobile-servises-and-constraction"
+               target="_blank"
+               rel="noopener">
+                💳 Pay With Yoco
+            </a>
 
-</a>
+        </div>
 
-</div>
-
-</div>
-
+    </div>
 </section>
 
 
-<!-- FAQ -->
+<!-- CTA -->
+<section class="cta">
 
-<section>
+    <div class="container">
 
-<div class="container">
+        <h2>Need Help With Your Pool?</h2>
 
-<div class="section-title">
+        <p>
+            Contact Lee Pool Repair & Maintenance Services today and tell
+            us what your pool needs.
+        </p>
 
-<small>Questions</small>
+        <div class="hero-buttons" style="justify-content:center;">
 
-<h2>Waste Removal FAQ</h2>
+            <a class="btn btn-primary"
+               href="tel:0688685355">
+                📞 068 868 5355
+            </a>
 
-</div>
+            <a class="btn btn-whatsapp"
+               href="https://wa.me/27688685355?text=Hi%20Lee%20Pool%20Repair%20%26%20Maintenance%20Services%2C%20I%20need%20help%20with%20my%20pool."
+               target="_blank"
+               rel="noopener">
+                💬 WhatsApp Us
+            </a>
 
+        </div>
 
-<div class="faq">
-
-
-<details>
-
-<summary>
-What type of waste do you remove?
-</summary>
-
-<p>
-We accept enquiries for general household waste,
-garden waste, building rubble, bulk waste, recyclable
-materials and other suitable waste streams.
-</p>
-
-</details>
-
-
-<details>
-
-<summary>
-Do you remove garden waste?
-</summary>
-
-<p>
-Yes. Garden waste removal can include suitable grass,
-leaves, branches and tree cuttings.
-</p>
-
-</details>
-
-
-<details>
-
-<summary>
-Do you remove building rubble?
-</summary>
-
-<p>
-We accept enquiries for suitable non-hazardous building
-and renovation rubble. Send a photo and details so the
-job can be assessed.
-</p>
-
-</details>
-
-
-<details>
-
-<summary>
-Can I send a photo of my waste?
-</summary>
-
-<p>
-Yes. WhatsApp is a convenient way to send photographs
-of the waste so we can better understand the job before
-discussing the quotation.
-</p>
-
-</details>
-
-
-<details>
-
-<summary>
-Do you offer skip bins?
-</summary>
-
-<p>
-You can contact us with your skip-bin requirements,
-including the type of waste, approximate volume,
-location and preferred dates.
-</p>
-
-</details>
-
-
-<details>
-
-<summary>
-Do you collect hazardous waste?
-</summary>
-
-<p>
-Hazardous waste requires specialist handling and
-appropriate disposal arrangements. Contact us first
-with details of the material so that the correct
-service route can be determined.
-</p>
-
-</details>
-
-
-</div>
-
-</div>
+    </div>
 
 </section>
 
 
 <!-- CONTACT -->
-
 <section class="contact" id="contact">
 
-<div class="container">
+    <div class="container">
 
-<div class="section-title">
+        <div class="section-heading">
+            <div class="eyebrow">Contact Us</div>
+            <h2>Let's Talk About Your Pool</h2>
+            <p>
+                Call, WhatsApp or use the booking form.
+            </p>
+        </div>
 
-<small style="color:#69d970;">
-Contact Lee Waste Management
-</small>
+        <div class="contact-card">
 
-<h2>Let's Get Your Waste Cleared</h2>
+            <div class="contact-box">
+                <span>📞</span>
+                <h3>Phone</h3>
+                <a href="tel:0688685355">
+                    068 868 5355
+                </a>
+            </div>
 
-<p style="color:#bfcec4;">
-Send us the details or a photo of the waste for a quotation.
-</p>
+            <div class="contact-box">
+                <span>💬</span>
+                <h3>WhatsApp</h3>
+                <a href="https://wa.me/27688685355"
+                   target="_blank"
+                   rel="noopener">
+                    Chat on WhatsApp
+                </a>
+            </div>
 
-</div>
+            <div class="contact-box">
+                <span>💳</span>
+                <h3>Yoco</h3>
+                <a href="https://pay.yoco.com/lee-mobile-servises-and-constraction"
+                   target="_blank"
+                   rel="noopener">
+                    Make a Payment
+                </a>
+            </div>
 
+        </div>
 
-<div class="contact-grid">
-
-
-<div class="contact-box">
-
-<div>📞</div>
-
-<h3>Call</h3>
-
-<p>
-
-<a href="tel:+27688585355">
-068 858 5355
-</a>
-
-</p>
-
-</div>
-
-
-<div class="contact-box">
-
-<div>💬</div>
-
-<h3>WhatsApp</h3>
-
-<p>
-
-<a href="https://wa.me/message/27688585355">
-Chat With Us
-</a>
-
-</p>
-
-</div>
-
-
-<div class="contact-box">
-
-<div>💳</div>
-
-<h3>Yoco</h3>
-
-<p>
-
-<a
-href="https://pay.yoco.com/lee-mobile-servises-and-constraction"
-target="_blank">
-
-Make A Payment
-
-</a>
-
-</p>
-
-</div>
-
-
-</div>
-
-</div>
+    </div>
 
 </section>
 
 
 <!-- FOOTER -->
-
 <footer>
 
-<p>
-<strong>Lee Waste Management Services</strong>
-</p>
+    <div class="container footer-grid">
 
-<p>
-Waste Removal • Recycling • Garden Waste • Rubble • Site Clean-Up
-</p>
+        <div>
+            <h3>Lee Pool Repair & Maintenance Services</h3>
 
-<p>
-© 2026 Lee Waste Management Services. All Rights Reserved.
-</p>
+            <p>
+                Pool cleaning, maintenance, repair and pool-care enquiries.
+            </p>
+
+            <p style="margin-top:12px;">
+                📞 <a href="tel:0688685355">068 868 5355</a>
+            </p>
+
+            <p>
+                💬 <a href="https://wa.me/27688685355"
+                     target="_blank"
+                     rel="noopener">
+                    WhatsApp: 068 868 5355
+                </a>
+            </p>
+        </div>
+
+        <div>
+            <h3>Quick Links</h3>
+
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#services">Services</a>
+                <a href="#about">About</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#booking">Book</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+
+        <div>
+            <h3>Services</h3>
+
+            <div class="footer-links">
+                <a href="#services">Pool Cleaning</a>
+                <a href="#services">Pool Repairs</a>
+                <a href="#services">Pool Maintenance</a>
+                <a href="#services">Pump Services</a>
+                <a href="#services">Filter Services</a>
+                <a href="#services">Water Care</a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container footer-bottom">
+        © <span id="year"></span> Lee Pool Repair & Maintenance Services.
+        All rights reserved.
+    </div>
 
 </footer>
 
 
 <!-- FLOATING WHATSAPP -->
-
-<a
-class="whatsapp"
-href="https://wa.me/27688585355?text=Hello%20Lee%20Waste%20Management%2C%20I%20need%20a%20waste%20removal%20quotation."
-aria-label="WhatsApp">
-
-💬
-
+<a class="floating-whatsapp"
+   href="https://wa.me/27688685355?text=Hi%20Lee%20Pool%20Repair%20%26%20Maintenance%20Services%2C%20I%20would%20like%20to%20book%20a%20pool%20service."
+   target="_blank"
+   rel="noopener"
+   aria-label="Chat with Lee Pool Services on WhatsApp">
+    💬
 </a>
 
 
 <script>
 
+/* CURRENT YEAR */
+document.getElementById("year").textContent = new Date().getFullYear();
+
+
 /* MOBILE MENU */
+const menuBtn = document.getElementById("menuBtn");
+const navLinks = document.getElementById("navLinks");
 
-function toggleMenu(){
+menuBtn.addEventListener("click", function(){
 
-const menu =
-document.getElementById("menu");
+    navLinks.classList.toggle("mobile-open");
 
-menu.classList.toggle("active");
+    if(navLinks.classList.contains("mobile-open")){
+        menuBtn.textContent = "✕";
+    }else{
+        menuBtn.textContent = "☰";
+    }
 
+});
+
+
+/* CLOSE MOBILE MENU AFTER CLICK */
+document.querySelectorAll(".nav-links a").forEach(function(link){
+
+    link.addEventListener("click", function(){
+
+        navLinks.classList.remove("mobile-open");
+        menuBtn.textContent = "☰";
+
+    });
+
+});
+
+
+/* WHATSAPP BOOKING */
+const WHATSAPP_NUMBER = "27688685355";
+
+document.getElementById("bookingForm").addEventListener("submit", function(event){
+
+    event.preventDefault();
+
+    const name = document.getElementById("name").value.trim();
+    const phone = document.getElementById("phone").value.trim();
+    const service = document.getElementById("service").value;
+    const property = document.getElementById("property").value;
+    const date = document.getElementById("date").value;
+    const time = document.getElementById("time").value;
+    const address = document.getElementById("address").value.trim();
+    const details = document.getElementById("details").value.trim();
+
+    const message =
+`Hi Lee Pool Repair & Maintenance Services 👋
+
+I would like to book a pool service.
+
+Name: ${name}
+Phone: ${phone}
+Service: ${service}
+Property Type: ${property}
+Preferred Date: ${date}
+Preferred Time: ${time}
+Address / Area: ${address}
+Pool Problem / Details: ${details || "Not provided"}
+
+Please let me know the next step. Thank you.`;
+
+    const whatsappURL =
+        "https://wa.me/" +
+        WHATSAPP_NUMBER +
+        "?text=" +
+        encodeURIComponent(message);
+
+    window.open(
+        whatsappURL,
+        "_blank",
+        "noopener,noreferrer"
+    );
+
+});
+
+
+/* SET MINIMUM DATE TO TODAY */
+const dateInput = document.getElementById("date");
+
+if(dateInput){
+
+    const today = new Date();
+
+    const year = today.getFullYear();
+    const month = String(today.getMonth() + 1).padStart(2,"0");
+    const day = String(today.getDate()).padStart(2,"0");
+
+    dateInput.min = `${year}-${month}-${day}`;
 }
-
-
-document
-.querySelectorAll("nav a")
-.forEach(link => {
-
-link.addEventListener("click",function(){
-
-document
-.getElementById("menu")
-.classList.remove("active");
-
-});
-
-});
-
-
-/* WASTE QUOTE FORM */
-
-document
-.getElementById("wasteForm")
-.addEventListener("submit",function(e){
-
-e.preventDefault();
-
-
-const name =
-document.getElementById("name").value;
-
-const phone =
-document.getElementById("phone").value;
-
-const service =
-document.getElementById("service").value;
-
-const property =
-document.getElementById("property").value;
-
-const date =
-document.getElementById("date").value ||
-"Not specified";
-
-const time =
-document.getElementById("time").value ||
-"Not specified";
-
-const address =
-document.getElementById("address").value;
-
-const size =
-document.getElementById("size").value ||
-"Not specified";
-
-const loading =
-document.getElementById("loading").value ||
-"Not specified";
-
-const details =
-document.getElementById("details").value ||
-"Not specified";
-
-
-const message =
-
-`Hello Lee Waste Management Services,
-
-I would like to request a waste removal quotation.
-
-Name:
-${name}
-
-Phone:
-${phone}
-
-Service Required:
-${service}
-
-Property Type:
-${property}
-
-Preferred Date:
-${date}
-
-Preferred Time:
-${time}
-
-Collection Address / Area:
-${address}
-
-Estimated Waste Size:
-${size}
-
-Loading:
-${loading}
-
-Waste Details:
-${details}
-
-Please let me know about the quotation and next steps.
-
-Thank you.`;
-
-
-const url =
-"https://wa.me/27688585355?text=" +
-encodeURIComponent(message);
-
-
-window.open(url,"_blank");
-
-});
 
 </script>
 
