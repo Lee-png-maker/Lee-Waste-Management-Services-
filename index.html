@@ -1,585 +1,3220 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Lee Waste Management Services | Waste Removal South Africa</title>
+<title>Lee Waste Management Services | Waste Removal & Clean-Up</title>
 
-  <meta name="description" content="Lee Waste Management Services provides reliable waste removal, rubbish collection, garden waste removal, building rubble removal and clean-up services. We come to you.">
-  <meta name="theme-color" content="#087f23">
+<meta name="description" content="Lee Waste Management Services provides reliable waste removal, rubbish collection, garden waste, building rubble, furniture removal and property clean-up services. We come to you.">
 
-  <!-- WhatsApp Icon -->
-  <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<meta name="keywords" content="waste management, waste removal, rubbish removal, garden waste, rubble removal, furniture removal, clean up services, Johannesburg, Pretoria, Midrand, Centurion, Tembisa, South Africa">
 
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+<meta name="theme-color" content="#087f23">
 
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      background: #f5f7f6;
-      color: #222;
-      line-height: 1.6;
-    }
+<!-- Font Awesome -->
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
-    /* HEADER */
-    header {
-      background: #087f23;
-      color: white;
-      padding: 16px 20px;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.15);
-    }
+<style>
 
-    .nav {
-      max-width: 1100px;
-      margin: auto;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
+/* =========================
+   RESET
+========================= */
 
-    .logo {
-      font-size: 21px;
-      font-weight: bold;
-    }
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
 
-    .logo span {
-      display: block;
-      font-size: 12px;
-      font-weight: normal;
-      opacity: 0.9;
-    }
+html{
+  scroll-behavior:smooth;
+}
 
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin-left: 18px;
-      font-weight: bold;
-    }
+body{
+  font-family:Arial,Helvetica,sans-serif;
+  background:#f5f7f6;
+  color:#202520;
+  line-height:1.6;
+}
 
-    nav a:hover {
-      text-decoration: underline;
-    }
+a{
+  text-decoration:none;
+  color:inherit;
+}
 
-    /* HERO */
-    .hero {
-      background: linear-gradient(
-        rgba(0,70,20,0.78),
-        rgba(0,70,20,0.78)
-      ),
-      url("https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?auto=format&fit=crop&w=1600&q=80")
-      center/cover;
+img{
+  max-width:100%;
+  display:block;
+}
 
-      color: white;
-      text-align: center;
-      padding: 95px 20px;
-    }
+button,
+input,
+select,
+textarea{
+  font:inherit;
+}
 
-    .hero h1 {
-      font-size: clamp(34px, 6vw, 58px);
-      margin-bottom: 15px;
-    }
 
-    .hero p {
-      max-width: 700px;
-      margin: auto;
-      font-size: 19px;
-    }
+/* =========================
+   COLORS
+========================= */
 
-    .buttons {
-      margin-top: 28px;
-    }
+:root{
+  --green:#087f23;
+  --dark-green:#045b19;
+  --light-green:#eaf7ed;
+  --lime:#b8e986;
+  --white:#ffffff;
+  --black:#182019;
+  --gray:#66706a;
+  --light:#f5f7f6;
+  --border:#dfe6e1;
+  --shadow:0 10px 30px rgba(0,0,0,.08);
+}
 
-    .btn {
-      display: inline-block;
-      padding: 14px 23px;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: bold;
-      margin: 6px;
-    }
 
-    .btn-whatsapp {
-      background: #25D366;
-      color: white;
-    }
+/* =========================
+   TOP BAR
+========================= */
 
-    .btn-call {
-      background: white;
-      color: #087f23;
-    }
+.topbar{
+  background:#053c12;
+  color:white;
+  padding:9px 20px;
+  font-size:14px;
+}
 
-    /* SECTIONS */
-    section {
-      padding: 60px 20px;
-    }
+.topbar-inner{
+  max-width:1200px;
+  margin:auto;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:15px;
+}
 
-    .container {
-      max-width: 1100px;
-      margin: auto;
-    }
+.topbar a{
+  color:white;
+  font-weight:bold;
+}
 
-    .section-title {
-      text-align: center;
-      margin-bottom: 35px;
-    }
 
-    .section-title h2 {
-      color: #087f23;
-      font-size: 32px;
-      margin-bottom: 8px;
-    }
+/* =========================
+   HEADER
+========================= */
 
-    .section-title p {
-      color: #666;
-    }
+header{
+  position:sticky;
+  top:0;
+  z-index:1000;
+  background:white;
+  box-shadow:0 3px 18px rgba(0,0,0,.09);
+}
 
-    /* SERVICES */
-    .services {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 20px;
-    }
+.nav-container{
+  max-width:1200px;
+  margin:auto;
+  min-height:76px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:10px 20px;
+}
 
-    .service {
-      background: white;
-      padding: 28px 20px;
-      border-radius: 12px;
-      text-align: center;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-      transition: 0.25s;
-    }
+.logo{
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
 
-    .service:hover {
-      transform: translateY(-5px);
-    }
+.logo-icon{
+  width:48px;
+  height:48px;
+  border-radius:12px;
+  background:var(--green);
+  color:white;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:24px;
+}
 
-    .service i {
-      font-size: 38px;
-      color: #087f23;
-      margin-bottom: 15px;
-    }
+.logo-text{
+  font-weight:800;
+  color:var(--black);
+  font-size:18px;
+}
 
-    .service h3 {
-      margin-bottom: 8px;
-    }
+.logo-text span{
+  display:block;
+  color:var(--green);
+  font-size:11px;
+  letter-spacing:.5px;
+}
 
-    /* WHY US */
-    .why {
-      background: #eaf6ed;
-    }
+nav{
+  display:flex;
+  align-items:center;
+  gap:20px;
+}
 
-    .why-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 20px;
-    }
+nav a{
+  font-weight:700;
+  font-size:14px;
+}
 
-    .why-card {
-      text-align: center;
-      padding: 25px;
-    }
+nav a:hover{
+  color:var(--green);
+}
 
-    .why-card i {
-      font-size: 35px;
-      color: #087f23;
-      margin-bottom: 12px;
-    }
+.nav-button{
+  background:var(--green);
+  color:white !important;
+  padding:11px 17px;
+  border-radius:8px;
+}
 
-    /* CTA */
-    .cta {
-      background: #087f23;
-      color: white;
-      text-align: center;
-    }
+.menu-btn{
+  display:none;
+  border:0;
+  background:var(--green);
+  color:white;
+  width:45px;
+  height:42px;
+  border-radius:8px;
+  font-size:20px;
+}
 
-    .cta h2 {
-      font-size: 34px;
-      margin-bottom: 12px;
-    }
 
-    .cta p {
-      margin-bottom: 20px;
-    }
+/* =========================
+   HERO
+========================= */
 
-    /* CONTACT */
-    .contact-box {
-      background: white;
-      max-width: 650px;
-      margin: auto;
-      padding: 35px 25px;
-      border-radius: 14px;
-      text-align: center;
-      box-shadow: 0 4px 18px rgba(0,0,0,0.08);
-    }
+.hero{
+  min-height:650px;
+  display:flex;
+  align-items:center;
+  background:
+    linear-gradient(rgba(0,60,15,.84),rgba(0,40,10,.87)),
+    url("https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?auto=format&fit=crop&w=1800&q=85")
+    center/cover;
+  color:white;
+}
 
-    .contact-item {
-      margin: 18px 0;
-      font-size: 18px;
-    }
+.hero-container{
+  width:100%;
+  max-width:1200px;
+  margin:auto;
+  padding:80px 20px;
+}
 
-    .contact-item i {
-      color: #087f23;
-      margin-right: 8px;
-    }
+.hero-content{
+  max-width:780px;
+}
 
-    .contact-item a {
-      color: #222;
-      text-decoration: none;
-      font-weight: bold;
-    }
+.badge{
+  display:inline-block;
+  background:rgba(255,255,255,.14);
+  border:1px solid rgba(255,255,255,.3);
+  padding:8px 14px;
+  border-radius:30px;
+  margin-bottom:20px;
+  font-size:13px;
+  font-weight:bold;
+}
 
-    /* FOOTER */
-    footer {
-      background: #123018;
-      color: white;
-      text-align: center;
-      padding: 25px 15px;
-    }
+.hero h1{
+  font-size:clamp(40px,6vw,68px);
+  line-height:1.05;
+  margin-bottom:22px;
+}
 
-    footer p {
-      margin: 5px;
-    }
+.hero h1 span{
+  color:var(--lime);
+}
 
-    /* FLOATING WHATSAPP */
-    .whatsapp-float {
-      position: fixed;
-      width: 62px;
-      height: 62px;
-      right: 20px;
-      bottom: 20px;
-      background: #25D366;
-      color: white;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 34px;
-      text-decoration: none;
-      box-shadow: 0 5px 18px rgba(0,0,0,0.3);
-      z-index: 9999;
-      transition: 0.25s;
-    }
+.hero p{
+  font-size:19px;
+  max-width:720px;
+  color:#e9f4eb;
+}
 
-    .whatsapp-float:hover {
-      transform: scale(1.1);
-    }
+.hero-buttons{
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
+  margin-top:30px;
+}
 
-    .whatsapp-label {
-      position: fixed;
-      right: 90px;
-      bottom: 35px;
-      background: white;
-      color: #222;
-      padding: 8px 12px;
-      border-radius: 7px;
-      box-shadow: 0 3px 12px rgba(0,0,0,0.2);
-      font-size: 13px;
-      font-weight: bold;
-      z-index: 9998;
-    }
+.btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:9px;
+  border:0;
+  cursor:pointer;
+  padding:14px 22px;
+  border-radius:9px;
+  font-weight:800;
+  transition:.2s;
+}
 
-    /* MOBILE */
-    @media (max-width: 700px) {
-      nav {
-        display: none;
-      }
+.btn:hover{
+  transform:translateY(-2px);
+}
 
-      .hero {
-        padding: 75px 18px;
-      }
+.btn-green{
+  background:#25d366;
+  color:white;
+}
 
-      .hero h1 {
-        font-size: 37px;
-      }
+.btn-white{
+  background:white;
+  color:var(--green);
+}
 
-      .hero p {
-        font-size: 17px;
-      }
+.btn-dark{
+  background:var(--black);
+  color:white;
+}
 
-      .whatsapp-label {
-        display: none;
-      }
+.btn-outline{
+  border:2px solid var(--green);
+  color:var(--green);
+  background:white;
+}
 
-      .whatsapp-float {
-        width: 58px;
-        height: 58px;
-        right: 15px;
-        bottom: 15px;
-      }
-    }
-  </style>
+.hero-info{
+  margin-top:35px;
+  display:flex;
+  flex-wrap:wrap;
+  gap:25px;
+}
+
+.hero-info div{
+  display:flex;
+  gap:8px;
+  align-items:center;
+  font-size:14px;
+}
+
+.hero-info i{
+  color:var(--lime);
+}
+
+
+/* =========================
+   QUICK STRIP
+========================= */
+
+.quick-strip{
+  background:white;
+  box-shadow:var(--shadow);
+  position:relative;
+  margin:-45px auto 0;
+  max-width:1100px;
+  border-radius:14px;
+  padding:25px;
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:15px;
+}
+
+.quick-item{
+  text-align:center;
+  padding:10px;
+}
+
+.quick-item i{
+  color:var(--green);
+  font-size:25px;
+  margin-bottom:8px;
+}
+
+.quick-item strong{
+  display:block;
+}
+
+
+/* =========================
+   GENERAL
+========================= */
+
+section{
+  padding:85px 20px;
+}
+
+.container{
+  max-width:1200px;
+  margin:auto;
+}
+
+.section-heading{
+  text-align:center;
+  max-width:750px;
+  margin:0 auto 45px;
+}
+
+.section-heading .small{
+  color:var(--green);
+  font-weight:800;
+  text-transform:uppercase;
+  letter-spacing:1.5px;
+  font-size:13px;
+}
+
+.section-heading h2{
+  font-size:38px;
+  margin:8px 0 12px;
+  color:var(--black);
+}
+
+.section-heading p{
+  color:var(--gray);
+}
+
+
+/* =========================
+   SERVICES
+========================= */
+
+.services-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:20px;
+}
+
+.service-card{
+  background:white;
+  padding:28px 22px;
+  border-radius:14px;
+  box-shadow:var(--shadow);
+  border:1px solid #edf0ee;
+  transition:.25s;
+}
+
+.service-card:hover{
+  transform:translateY(-6px);
+}
+
+.service-icon{
+  width:55px;
+  height:55px;
+  border-radius:13px;
+  background:var(--light-green);
+  color:var(--green);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:25px;
+  margin-bottom:18px;
+}
+
+.service-card h3{
+  margin-bottom:8px;
+}
+
+.service-card p{
+  color:var(--gray);
+  font-size:14px;
+}
+
+.service-card a{
+  display:inline-block;
+  color:var(--green);
+  font-weight:bold;
+  font-size:13px;
+  margin-top:15px;
+}
+
+
+/* =========================
+   ABOUT
+========================= */
+
+.about{
+  background:var(--light-green);
+}
+
+.about-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:55px;
+  align-items:center;
+}
+
+.about-image{
+  min-height:470px;
+  border-radius:20px;
+  background:
+    linear-gradient(rgba(0,80,20,.2),rgba(0,80,20,.2)),
+    url("https://images.unsplash.com/photo-1605600659873-d808a13e4d2a?auto=format&fit=crop&w=1000&q=85")
+    center/cover;
+}
+
+.about-content .small{
+  color:var(--green);
+  font-weight:bold;
+  text-transform:uppercase;
+}
+
+.about-content h2{
+  font-size:40px;
+  line-height:1.15;
+  margin:10px 0 18px;
+}
+
+.about-content p{
+  color:var(--gray);
+  margin-bottom:15px;
+}
+
+.check-list{
+  list-style:none;
+  margin:25px 0;
+}
+
+.check-list li{
+  margin:12px 0;
+  display:flex;
+  gap:10px;
+}
+
+.check-list i{
+  color:var(--green);
+  margin-top:4px;
+}
+
+
+/* =========================
+   PRICING
+========================= */
+
+.price-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:20px;
+}
+
+.price-card{
+  background:white;
+  border:1px solid var(--border);
+  border-radius:15px;
+  padding:30px 22px;
+  text-align:center;
+  box-shadow:var(--shadow);
+}
+
+.price-card.featured{
+  border:3px solid var(--green);
+  transform:scale(1.03);
+}
+
+.price-card h3{
+  color:var(--green);
+  font-size:22px;
+}
+
+.price{
+  font-size:32px;
+  font-weight:900;
+  margin:15px 0;
+}
+
+.price small{
+  font-size:13px;
+  color:var(--gray);
+  font-weight:normal;
+}
+
+.price-card p{
+  color:var(--gray);
+  font-size:14px;
+  min-height:65px;
+}
+
+.price-card ul{
+  list-style:none;
+  text-align:left;
+  margin:20px 0;
+}
+
+.price-card li{
+  padding:8px 0;
+  border-bottom:1px solid #eee;
+  font-size:14px;
+}
+
+.price-card li i{
+  color:var(--green);
+  margin-right:7px;
+}
+
+
+/* =========================
+   QUOTE
+========================= */
+
+.quote-section{
+  background:#102c17;
+  color:white;
+}
+
+.quote-grid{
+  display:grid;
+  grid-template-columns:.8fr 1.2fr;
+  gap:50px;
+  align-items:start;
+}
+
+.quote-info h2{
+  font-size:40px;
+  margin:10px 0 15px;
+}
+
+.quote-info p{
+  color:#c9d9cd;
+}
+
+.quote-points{
+  margin-top:25px;
+}
+
+.quote-point{
+  display:flex;
+  gap:13px;
+  margin:17px 0;
+}
+
+.quote-point i{
+  color:var(--lime);
+  font-size:20px;
+}
+
+.form-card{
+  background:white;
+  color:var(--black);
+  padding:30px;
+  border-radius:16px;
+  box-shadow:0 15px 45px rgba(0,0,0,.25);
+}
+
+.form-card h3{
+  margin-bottom:20px;
+}
+
+.form-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:15px;
+}
+
+.form-group{
+  margin-bottom:15px;
+}
+
+.form-group.full{
+  grid-column:1/-1;
+}
+
+.form-group label{
+  display:block;
+  font-size:13px;
+  font-weight:bold;
+  margin-bottom:6px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea{
+  width:100%;
+  border:1px solid var(--border);
+  border-radius:8px;
+  padding:12px;
+  outline:none;
+  background:#fafcfb;
+}
+
+.form-group textarea{
+  min-height:110px;
+  resize:vertical;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus{
+  border-color:var(--green);
+}
+
+.form-submit{
+  width:100%;
+  background:var(--green);
+  color:white;
+}
+
+
+/* =========================
+   BOOKING
+========================= */
+
+.booking{
+  background:white;
+}
+
+.booking-box{
+  max-width:1000px;
+  margin:auto;
+  background:#f5f8f6;
+  padding:35px;
+  border-radius:18px;
+  border:1px solid var(--border);
+}
+
+.steps{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:15px;
+  margin-bottom:30px;
+}
+
+.step{
+  text-align:center;
+  padding:15px;
+}
+
+.step-number{
+  width:40px;
+  height:40px;
+  border-radius:50%;
+  background:var(--green);
+  color:white;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  margin:0 auto 8px;
+  font-weight:bold;
+}
+
+
+/* =========================
+   WASTE TYPES
+========================= */
+
+.waste-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+}
+
+.waste-card{
+  background:white;
+  border-radius:14px;
+  padding:25px;
+  box-shadow:var(--shadow);
+  display:flex;
+  gap:18px;
+  align-items:flex-start;
+}
+
+.waste-card i{
+  font-size:30px;
+  color:var(--green);
+}
+
+.waste-card p{
+  color:var(--gray);
+  font-size:14px;
+}
+
+
+/* =========================
+   GALLERY
+========================= */
+
+.gallery{
+  background:var(--light-green);
+}
+
+.gallery-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:15px;
+}
+
+.gallery-item{
+  height:230px;
+  border-radius:12px;
+  overflow:hidden;
+  position:relative;
+  background:#ddd;
+}
+
+.gallery-item img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  transition:.3s;
+}
+
+.gallery-item:hover img{
+  transform:scale(1.06);
+}
+
+.gallery-label{
+  position:absolute;
+  left:12px;
+  bottom:12px;
+  background:rgba(0,0,0,.72);
+  color:white;
+  padding:7px 10px;
+  border-radius:6px;
+  font-size:12px;
+  font-weight:bold;
+}
+
+
+/* =========================
+   SERVICE AREAS
+========================= */
+
+.areas-grid{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:12px;
+  max-width:900px;
+  margin:auto;
+}
+
+.area{
+  background:white;
+  border:1px solid var(--border);
+  padding:12px 18px;
+  border-radius:30px;
+  font-weight:bold;
+}
+
+.area i{
+  color:var(--green);
+  margin-right:6px;
+}
+
+
+/* =========================
+   WHY US
+========================= */
+
+.why{
+  background:white;
+}
+
+.why-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+}
+
+.why-card{
+  padding:30px;
+  border-radius:14px;
+  background:#f7faf8;
+  border:1px solid var(--border);
+}
+
+.why-card i{
+  font-size:32px;
+  color:var(--green);
+  margin-bottom:15px;
+}
+
+.why-card p{
+  color:var(--gray);
+  font-size:14px;
+}
+
+
+/* =========================
+   REVIEWS
+========================= */
+
+.reviews{
+  background:var(--light-green);
+}
+
+.review-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+}
+
+.review{
+  background:white;
+  padding:28px;
+  border-radius:14px;
+  box-shadow:var(--shadow);
+}
+
+.stars{
+  color:#f5b400;
+  margin-bottom:15px;
+}
+
+.review p{
+  color:var(--gray);
+  font-style:italic;
+}
+
+.review strong{
+  display:block;
+  margin-top:18px;
+}
+
+
+/* =========================
+   FAQ
+========================= */
+
+.faq{
+  max-width:850px;
+  margin:auto;
+}
+
+details{
+  background:white;
+  margin-bottom:12px;
+  border-radius:10px;
+  border:1px solid var(--border);
+  overflow:hidden;
+}
+
+summary{
+  cursor:pointer;
+  padding:18px 20px;
+  font-weight:bold;
+}
+
+details p{
+  padding:0 20px 20px;
+  color:var(--gray);
+}
+
+
+/* =========================
+   CTA
+========================= */
+
+.final-cta{
+  background:
+    linear-gradient(rgba(0,90,25,.9),rgba(0,70,20,.9)),
+    url("https://images.unsplash.com/photo-1503596476-1c12a8ba09a9?auto=format&fit=crop&w=1600&q=80")
+    center/cover;
+  color:white;
+  text-align:center;
+}
+
+.final-cta h2{
+  font-size:44px;
+  margin-bottom:12px;
+}
+
+.final-cta p{
+  max-width:650px;
+  margin:0 auto 25px;
+  color:#e7f4e9;
+}
+
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+}
+
+.contact-card{
+  background:white;
+  border:1px solid var(--border);
+  border-radius:14px;
+  padding:30px;
+  text-align:center;
+  box-shadow:var(--shadow);
+}
+
+.contact-card i{
+  color:var(--green);
+  font-size:30px;
+  margin-bottom:12px;
+}
+
+.contact-card p{
+  color:var(--gray);
+  font-size:14px;
+  margin-top:5px;
+}
+
+.contact-card a{
+  font-weight:bold;
+  color:var(--green);
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+  background:#09240f;
+  color:white;
+  padding:55px 20px 25px;
+}
+
+.footer-grid{
+  max-width:1200px;
+  margin:auto;
+  display:grid;
+  grid-template-columns:1.5fr 1fr 1fr 1fr;
+  gap:40px;
+}
+
+footer h3{
+  margin-bottom:15px;
+}
+
+footer p,
+footer li{
+  color:#b8c7bb;
+  font-size:14px;
+}
+
+footer ul{
+  list-style:none;
+}
+
+footer li{
+  margin:9px 0;
+}
+
+footer a:hover{
+  color:white;
+}
+
+.footer-bottom{
+  max-width:1200px;
+  margin:40px auto 0;
+  padding-top:20px;
+  border-top:1px solid rgba(255,255,255,.12);
+  text-align:center;
+  color:#aebbb1;
+  font-size:13px;
+}
+
+
+/* =========================
+   FLOATING BUTTONS
+========================= */
+
+.floating-buttons{
+  position:fixed;
+  right:18px;
+  bottom:18px;
+  z-index:9999;
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+
+.float-btn{
+  width:58px;
+  height:58px;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:white;
+  font-size:27px;
+  box-shadow:0 5px 20px rgba(0,0,0,.25);
+}
+
+.whatsapp{
+  background:#25d366;
+}
+
+.call{
+  background:var(--green);
+}
+
+
+/* =========================
+   BACK TO TOP
+========================= */
+
+.back-top{
+  position:fixed;
+  left:18px;
+  bottom:18px;
+  width:45px;
+  height:45px;
+  border-radius:50%;
+  background:var(--black);
+  color:white;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  z-index:999;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:950px){
+
+  nav{
+    position:absolute;
+    top:76px;
+    left:0;
+    right:0;
+    background:white;
+    display:none;
+    flex-direction:column;
+    padding:20px;
+    box-shadow:0 10px 20px rgba(0,0,0,.1);
+  }
+
+  nav.active{
+    display:flex;
+  }
+
+  nav a{
+    width:100%;
+    padding:10px;
+    text-align:center;
+  }
+
+  .menu-btn{
+    display:block;
+  }
+
+  .services-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .price-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .gallery-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .footer-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+}
+
+
+@media(max-width:700px){
+
+  .topbar-inner{
+    justify-content:center;
+    text-align:center;
+  }
+
+  .topbar .hide-mobile{
+    display:none;
+  }
+
+  .hero{
+    min-height:600px;
+  }
+
+  .hero h1{
+    font-size:42px;
+  }
+
+  .hero p{
+    font-size:17px;
+  }
+
+  .hero-buttons{
+    flex-direction:column;
+  }
+
+  .hero-buttons .btn{
+    width:100%;
+  }
+
+  .hero-info{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:15px;
+  }
+
+  .quick-strip{
+    margin:-25px 15px 0;
+    grid-template-columns:1fr 1fr;
+  }
+
+  section{
+    padding:65px 16px;
+  }
+
+  .section-heading h2{
+    font-size:31px;
+  }
+
+  .services-grid,
+  .price-grid,
+  .waste-grid,
+  .why-grid,
+  .review-grid,
+  .contact-grid{
+    grid-template-columns:1fr;
+  }
+
+  .price-card.featured{
+    transform:none;
+  }
+
+  .about-grid,
+  .quote-grid{
+    grid-template-columns:1fr;
+  }
+
+  .about-image{
+    min-height:300px;
+  }
+
+  .about-content h2,
+  .quote-info h2{
+    font-size:32px;
+  }
+
+  .form-grid{
+    grid-template-columns:1fr;
+  }
+
+  .form-group.full{
+    grid-column:auto;
+  }
+
+  .booking-box{
+    padding:20px;
+  }
+
+  .steps{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .gallery-grid{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .gallery-item{
+    height:180px;
+  }
+
+  .footer-grid{
+    grid-template-columns:1fr;
+  }
+
+  .final-cta h2{
+    font-size:34px;
+  }
+}
+
+</style>
 </head>
 
 <body>
 
-<!-- HEADER -->
-<header>
-  <div class="nav">
-    <div class="logo">
-      Lee Waste Management Services
-      <span>Reliable Waste Removal • We Come To You</span>
+
+<!-- =========================
+     TOP BAR
+========================= -->
+
+<div class="topbar">
+  <div class="topbar-inner">
+
+    <div class="hide-mobile">
+      <i class="fas fa-truck"></i>
+      Reliable Waste Removal • We Come To You
     </div>
 
-    <nav>
+    <a href="tel:0688685355">
+      <i class="fas fa-phone"></i>
+      068 868 5355
+    </a>
+
+  </div>
+</div>
+
+
+<!-- =========================
+     HEADER
+========================= -->
+
+<header>
+
+  <div class="nav-container">
+
+    <a href="#home" class="logo">
+
+      <div class="logo-icon">
+        <i class="fas fa-recycle"></i>
+      </div>
+
+      <div class="logo-text">
+        Lee Waste Management
+        <span>WASTE REMOVAL SERVICES</span>
+      </div>
+
+    </a>
+
+
+    <button class="menu-btn" onclick="toggleMenu()" aria-label="Open menu">
+      <i class="fas fa-bars"></i>
+    </button>
+
+
+    <nav id="mainNav">
+
       <a href="#home">Home</a>
       <a href="#services">Services</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
+      <a href="#prices">Prices</a>
+      <a href="#quote">Get Quote</a>
+      <a href="#booking">Book</a>
+      <a href="#areas">Areas</a>
+      <a href="#faq">FAQ</a>
+
+      <a class="nav-button"
+         href="https://wa.me/27688685355?text=Hello%20Lee%20Waste%20Management%20Services,%20I%20would%20like%20a%20quote."
+         target="_blank">
+
+        <i class="fab fa-whatsapp"></i>
+        WhatsApp
+
+      </a>
+
     </nav>
+
   </div>
+
 </header>
 
 
-<!-- HERO -->
+<!-- =========================
+     HERO
+========================= -->
+
 <section class="hero" id="home">
-  <h1>Lee Waste Management Services</h1>
 
-  <p>
-    Reliable and affordable waste removal services for homes,
-    businesses, gardens, renovations and construction sites.
-  </p>
+  <div class="hero-container">
 
-  <div class="buttons">
-    <a class="btn btn-whatsapp"
-       href="https://wa.me/27688685355?text=Hello%20Lee%20Waste%20Management%20Services,%20I%20would%20like%20a%20waste%20removal%20quote."
-       target="_blank">
-      <i class="fab fa-whatsapp"></i>
-      WhatsApp Us
-    </a>
+    <div class="hero-content">
 
-    <a class="btn btn-call"
-       href="tel:0688685355">
-      <i class="fas fa-phone"></i>
-      Call 068 868 5355
-    </a>
-  </div>
-</section>
-
-
-<!-- SERVICES -->
-<section id="services">
-  <div class="container">
-
-    <div class="section-title">
-      <h2>Our Waste Management Services</h2>
-      <p>Professional solutions for different types of waste.</p>
-    </div>
-
-    <div class="services">
-
-      <div class="service">
-        <i class="fas fa-trash"></i>
-        <h3>Rubbish Removal</h3>
-        <p>
-          General household and business rubbish collection
-          and removal.
-        </p>
-      </div>
-
-      <div class="service">
+      <div class="badge">
         <i class="fas fa-leaf"></i>
-        <h3>Garden Waste</h3>
-        <p>
-          Removal of grass, branches, leaves and other garden waste.
-        </p>
+        Professional Waste Management Services
       </div>
 
-      <div class="service">
-        <i class="fas fa-hammer"></i>
-        <h3>Building Rubble</h3>
-        <p>
-          Removal of rubble and waste from renovation and
-          construction projects.
-        </p>
-      </div>
-
-      <div class="service">
-        <i class="fas fa-house"></i>
-        <h3>House Clean-ups</h3>
-        <p>
-          Clear-outs and waste removal from homes, yards and properties.
-        </p>
-      </div>
-
-      <div class="service">
-        <i class="fas fa-building"></i>
-        <h3>Business Waste</h3>
-        <p>
-          Waste removal solutions for offices, shops and businesses.
-        </p>
-      </div>
-
-      <div class="service">
-        <i class="fas fa-truck"></i>
-        <h3>Bulk Waste Removal</h3>
-        <p>
-          Removal of large quantities of unwanted items and waste.
-        </p>
-      </div>
-
-      <div class="service">
-        <i class="fas fa-couch"></i>
-        <h3>Furniture Removal</h3>
-        <p>
-          Removal of unwanted furniture and household items.
-        </p>
-      </div>
-
-      <div class="service">
-        <i class="fas fa-recycle"></i>
-        <h3>Property Clear-outs</h3>
-        <p>
-          Help clearing unwanted waste before moving, selling or renovating.
-        </p>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-<!-- WHY US -->
-<section class="why" id="about">
-  <div class="container">
-
-    <div class="section-title">
-      <h2>Why Choose Lee Waste Management?</h2>
-      <p>Simple, reliable and convenient waste removal.</p>
-    </div>
-
-    <div class="why-grid">
-
-      <div class="why-card">
-        <i class="fas fa-truck-fast"></i>
-        <h3>We Come To You</h3>
-        <p>
-          Convenient mobile waste removal at your property.
-        </p>
-      </div>
-
-      <div class="why-card">
-        <i class="fas fa-clock"></i>
-        <h3>Reliable Service</h3>
-        <p>
-          We aim to provide dependable collection and removal.
-        </p>
-      </div>
-
-      <div class="why-card">
-        <i class="fas fa-tags"></i>
-        <h3>Affordable Quotes</h3>
-        <p>
-          Contact us with your requirements for a personalised quote.
-        </p>
-      </div>
-
-      <div class="why-card">
-        <i class="fas fa-leaf"></i>
-        <h3>Cleaner Spaces</h3>
-        <p>
-          We help keep homes, yards and businesses clean and organised.
-        </p>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-<!-- CTA -->
-<section class="cta">
-  <div class="container">
-
-    <h2>Need Waste Removed?</h2>
-
-    <p>
-      Send us a WhatsApp message today and tell us what needs to be removed.
-    </p>
-
-    <a class="btn btn-whatsapp"
-       href="https://wa.me/27688685355?text=Hello%20Lee%20Waste%20Management%20Services,%20I%20need%20waste%20removal.%20Please%20send%20me%20a%20quote."
-       target="_blank">
-
-      <i class="fab fa-whatsapp"></i>
-      Get a Quote on WhatsApp
-
-    </a>
-
-  </div>
-</section>
-
-
-<!-- CONTACT -->
-<section id="contact">
-  <div class="container">
-
-    <div class="section-title">
-      <h2>Contact Us</h2>
-      <p>Get in touch for a waste removal quote.</p>
-    </div>
-
-    <div class="contact-box">
-
-      <div class="contact-item">
-        <i class="fab fa-whatsapp"></i>
-        <a href="https://wa.me/27688685355" target="_blank">
-          WhatsApp: 068 868 5355
-        </a>
-      </div>
-
-      <div class="contact-item">
-        <i class="fas fa-phone"></i>
-        <a href="tel:0688685355">
-          068 868 5355
-        </a>
-      </div>
+      <h1>
+        Waste Gone.<br>
+        <span>Space Back.</span>
+      </h1>
 
       <p>
-        Tell us the type and amount of waste you need removed,
-        your location and when you need the service.
+        Reliable and convenient waste removal for homes,
+        businesses, gardens, renovations and construction sites.
+        Tell us what needs to go — <strong>we come to you.</strong>
+      </p>
+
+      <div class="hero-buttons">
+
+        <a class="btn btn-green"
+           href="https://wa.me/27688685355?text=Hello%20Lee%20Waste%20Management%20Services,%20I%20would%20like%20to%20request%20a%20quote."
+           target="_blank">
+
+          <i class="fab fa-whatsapp"></i>
+          Get WhatsApp Quote
+
+        </a>
+
+        <a class="btn btn-white" href="#booking">
+
+          <i class="fas fa-calendar-check"></i>
+          Book Collection
+
+        </a>
+
+        <a class="btn btn-white" href="tel:0688685355">
+
+          <i class="fas fa-phone"></i>
+          Call Us
+
+        </a>
+
+      </div>
+
+
+      <div class="hero-info">
+
+        <div>
+          <i class="fas fa-check-circle"></i>
+          Residential
+        </div>
+
+        <div>
+          <i class="fas fa-check-circle"></i>
+          Commercial
+        </div>
+
+        <div>
+          <i class="fas fa-check-circle"></i>
+          Construction
+        </div>
+
+        <div>
+          <i class="fas fa-check-circle"></i>
+          Garden Waste
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     QUICK STRIP
+========================= -->
+
+<div class="quick-strip">
+
+  <div class="quick-item">
+    <i class="fas fa-truck"></i>
+    <strong>We Come To You</strong>
+    Convenient collection
+  </div>
+
+  <div class="quick-item">
+    <i class="fas fa-clock"></i>
+    <strong>Flexible Booking</strong>
+    Choose your preferred time
+  </div>
+
+  <div class="quick-item">
+    <i class="fas fa-tags"></i>
+    <strong>Quote First</strong>
+    Know your cost before collection
+  </div>
+
+  <div class="quick-item">
+    <i class="fas fa-phone"></i>
+    <strong>068 868 5355</strong>
+    Call or WhatsApp
+  </div>
+
+</div>
+
+
+<!-- =========================
+     SERVICES
+========================= -->
+
+<section id="services">
+
+  <div class="container">
+
+    <div class="section-heading">
+
+      <div class="small">What We Do</div>
+
+      <h2>Complete Waste Removal Services</h2>
+
+      <p>
+        From a small household clean-up to large amounts of
+        construction rubble, we help you clear unwanted waste.
       </p>
 
     </div>
 
+
+    <div class="services-grid">
+
+
+      <div class="service-card">
+
+        <div class="service-icon">
+          <i class="fas fa-trash"></i>
+        </div>
+
+        <h3>General Rubbish</h3>
+
+        <p>
+          Removal of unwanted household and general rubbish.
+        </p>
+
+        <a href="#quote">Request Quote →</a>
+
+      </div>
+
+
+      <div class="service-card">
+
+        <div class="service-icon">
+          <i class="fas fa-leaf"></i>
+        </div>
+
+        <h3>Garden Waste</h3>
+
+        <p>
+          Grass, branches, leaves, plants and garden clean-up waste.
+        </p>
+
+        <a href="#quote">Request Quote →</a>
+
+      </div>
+
+
+      <div class="service-card">
+
+        <div class="service-icon">
+          <i class="fas fa-hammer"></i>
+        </div>
+
+        <h3>Building Rubble</h3>
+
+        <p>
+          Removal of rubble from renovations and construction work.
+        </p>
+
+        <a href="#quote">Request Quote →</a>
+
+      </div>
+
+
+      <div class="service-card">
+
+        <div class="service-icon">
+          <i class="fas fa-couch"></i>
+        </div>
+
+        <h3>Furniture Removal</h3>
+
+        <p>
+          Unwanted couches, cupboards, beds, tables and furniture.
+        </p>
+
+        <a href="#quote">Request Quote →</a>
+
+      </div>
+
+
+      <div class="service-card">
+
+        <div class="service-icon">
+          <i class="fas fa-house"></i>
+        </div>
+
+        <h3>House Clear-Outs</h3>
+
+        <p>
+          Clear unwanted items and rubbish from houses and yards.
+        </p>
+
+        <a href="#quote">Request Quote →</a>
+
+      </div>
+
+
+      <div class="service-card">
+
+        <div class="service-icon">
+          <i class="fas fa-building"></i>
+        </div>
+
+        <h3>Business Waste</h3>
+
+        <p>
+          Waste collection and clean-up support for businesses.
+        </p>
+
+        <a href="#quote">Request Quote →</a>
+
+      </div>
+
+
+      <div class="service-card">
+
+        <div class="service-icon">
+          <i class="fas fa-truck"></i>
+        </div>
+
+        <h3>Bulk Waste</h3>
+
+        <p>
+          Large quantities of waste and unwanted items.
+        </p>
+
+        <a href="#quote">Request Quote →</a>
+
+      </div>
+
+
+      <div class="service-card">
+
+        <div class="service-icon">
+          <i class="fas fa-recycle"></i>
+        </div>
+
+        <h3>Property Clean-Up</h3>
+
+        <p>
+          Property, yard and site clean-ups before or after projects.
+        </p>
+
+        <a href="#quote">Request Quote →</a>
+
+      </div>
+
+    </div>
+
   </div>
+
 </section>
 
 
-<!-- FOOTER -->
+<!-- =========================
+     ABOUT
+========================= -->
+
+<section class="about" id="about">
+
+  <div class="container">
+
+    <div class="about-grid">
+
+      <div class="about-image"></div>
+
+
+      <div class="about-content">
+
+        <div class="small">About Lee Waste Management</div>
+
+        <h2>
+          A Cleaner Property Starts With Removing What You Don't Need.
+        </h2>
+
+        <p>
+          Lee Waste Management Services provides convenient waste
+          removal and property clean-up solutions for residential,
+          commercial and construction customers.
+        </p>
+
+        <p>
+          Instead of worrying about how to transport unwanted waste,
+          contact us and we can arrange collection from your property.
+        </p>
+
+
+        <ul class="check-list">
+
+          <li>
+            <i class="fas fa-check-circle"></i>
+            Convenient collection service
+          </li>
+
+          <li>
+            <i class="fas fa-check-circle"></i>
+            Residential and commercial services
+          </li>
+
+          <li>
+            <i class="fas fa-check-circle"></i>
+            Garden and building waste removal
+          </li>
+
+          <li>
+            <i class="fas fa-check-circle"></i>
+            Quotes based on your specific job
+          </li>
+
+          <li>
+            <i class="fas fa-check-circle"></i>
+            WhatsApp booking available
+          </li>
+
+        </ul>
+
+
+        <a class="btn btn-dark"
+           href="https://wa.me/27688685355?text=Hello%20Lee%20Waste%20Management,%20I%20would%20like%20to%20know%20more%20about%20your%20services."
+           target="_blank">
+
+          <i class="fab fa-whatsapp"></i>
+          Speak To Us
+
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     PRICES
+========================= -->
+
+<section id="prices">
+
+  <div class="container">
+
+    <div class="section-heading">
+
+      <div class="small">Starting Prices</div>
+
+      <h2>Simple Waste Removal Pricing</h2>
+
+      <p>
+        Prices depend on the amount and type of waste,
+        access and collection distance. Contact us for an exact quote.
+      </p>
+
+    </div>
+
+
+    <div class="price-grid">
+
+
+      <div class="price-card">
+
+        <h3>Small Load</h3>
+
+        <div class="price">
+          From R300
+        </div>
+
+        <p>
+          Suitable for smaller amounts of household or garden waste.
+        </p>
+
+        <ul>
+
+          <li>
+            <i class="fas fa-check"></i>
+            Small waste load
+          </li>
+
+          <li>
+            <i class="fas fa-check"></i>
+            Household waste
+          </li>
+
+          <li>
+            <i class="fas fa-check"></i>
+            Garden waste
+          </li>
+
+        </ul>
+
+        <a class="btn btn-outline" href="#quote">
+          Get Exact Quote
+        </a>
+
+      </div>
+
+
+      <div class="price-card featured">
+
+        <h3>Medium Load</h3>
+
+        <div class="price">
+          From R500
+        </div>
+
+        <p>
+          For larger household, garden or property clean-ups.
+        </p>
+
+        <ul>
+
+          <li>
+            <i class="fas fa-check"></i>
+            Medium load
+          </li>
+
+          <li>
+            <i class="fas fa-check"></i>
+            Property clear-outs
+          </li>
+
+          <li>
+            <i class="fas fa-check"></i>
+            Furniture
+          </li>
+
+        </ul>
+
+        <a class="btn btn-green" href="#quote">
+          Get Exact Quote
+        </a>
+
+      </div>
+
+
+      <div class="price-card">
+
+        <h3>Large Load</h3>
+
+        <div class="price">
+          From R800
+        </div>
+
+        <p>
+          Larger amounts of waste requiring more collection capacity.
+        </p>
+
+        <ul>
+
+          <li>
+            <i class="fas fa-check"></i>
+            Large waste loads
+          </li>
+
+          <li>
+            <i class="fas fa-check"></i>
+            Garden clean-ups
+          </li>
+
+          <li>
+            <i class="fas fa-check"></i>
+            Bulk items
+          </li>
+
+        </ul>
+
+        <a class="btn btn-outline" href="#quote">
+          Get Exact Quote
+        </a>
+
+      </div>
+
+
+      <div class="price-card">
+
+        <h3>Construction</h3>
+
+        <div class="price">
+          Quote
+        </div>
+
+        <p>
+          Building rubble and larger construction waste removal.
+        </p>
+
+        <ul>
+
+          <li>
+            <i class="fas fa-check"></i>
+            Building rubble
+          </li>
+
+          <li>
+            <i class="fas fa-check"></i>
+            Renovation waste
+          </li>
+
+          <li>
+            <i class="fas fa-check"></i>
+            Site clean-up
+          </li>
+
+        </ul>
+
+        <a class="btn btn-outline" href="#quote">
+          Request Quote
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     WASTE TYPES
+========================= -->
+
+<section class="about">
+
+  <div class="container">
+
+    <div class="section-heading">
+
+      <div class="small">Waste We Handle</div>
+
+      <h2>What Can We Remove?</h2>
+
+      <p>
+        Contact us before booking if you are unsure whether
+        we can collect a particular type of waste.
+      </p>
+
+    </div>
+
+
+    <div class="waste-grid">
+
+
+      <div class="waste-card">
+        <i class="fas fa-trash-can"></i>
+        <div>
+          <h3>Household Waste</h3>
+          <p>General unwanted household rubbish and items.</p>
+        </div>
+      </div>
+
+
+      <div class="waste-card">
+        <i class="fas fa-seedling"></i>
+        <div>
+          <h3>Garden Waste</h3>
+          <p>Branches, leaves, grass and garden clean-up waste.</p>
+        </div>
+      </div>
+
+
+      <div class="waste-card">
+        <i class="fas fa-person-digging"></i>
+        <div>
+          <h3>Building Rubble</h3>
+          <p>Waste generated by renovations and building projects.</p>
+        </div>
+      </div>
+
+
+      <div class="waste-card">
+        <i class="fas fa-couch"></i>
+        <div>
+          <h3>Furniture</h3>
+          <p>Unwanted furniture and bulky household items.</p>
+        </div>
+      </div>
+
+
+      <div class="waste-card">
+        <i class="fas fa-box-open"></i>
+        <div>
+          <h3>Move-Out Waste</h3>
+          <p>Clear unwanted items when moving or changing properties.</p>
+        </div>
+      </div>
+
+
+      <div class="waste-card">
+        <i class="fas fa-briefcase"></i>
+        <div>
+          <h3>Business Waste</h3>
+          <p>Selected general waste from shops and offices.</p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     QUOTE FORM
+========================= -->
+
+<section class="quote-section" id="quote">
+
+  <div class="container">
+
+    <div class="quote-grid">
+
+
+      <div class="quote-info">
+
+        <div class="badge">FREE QUOTE REQUEST</div>
+
+        <h2>
+          Tell Us What Needs To Go.
+        </h2>
+
+        <p>
+          Complete the form and use the button to send your
+          request directly to Lee Waste Management Services on WhatsApp.
+        </p>
+
+
+        <div class="quote-points">
+
+          <div class="quote-point">
+            <i class="fas fa-camera"></i>
+            <div>
+              <strong>Have photos?</strong>
+              <br>
+              You can send photos on WhatsApp to help us understand the job.
+            </div>
+          </div>
+
+          <div class="quote-point">
+            <i class="fas fa-location-dot"></i>
+            <div>
+              <strong>Tell us your location</strong>
+              <br>
+              Include your suburb and area.
+            </div>
+          </div>
+
+          <div class="quote-point">
+            <i class="fas fa-truck"></i>
+            <div>
+              <strong>We come to you</strong>
+              <br>
+              We arrange collection based on the job.
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <div class="form-card">
+
+        <h3>
+          <i class="fas fa-file-invoice"></i>
+          Request A Quote
+        </h3>
+
+
+        <form id="quoteForm">
+
+          <div class="form-grid">
+
+            <div class="form-group">
+
+              <label>Your Name</label>
+
+              <input
+                type="text"
+                id="quoteName"
+                placeholder="Full name"
+                required>
+
+            </div>
+
+
+            <div class="form-group">
+
+              <label>Phone Number</label>
+
+              <input
+                type="tel"
+                id="quotePhone"
+                placeholder="Phone number"
+                required>
+
+            </div>
+
+
+            <div class="form-group">
+
+              <label>Service</label>
+
+              <select id="quoteService" required>
+
+                <option value="">Select service</option>
+                <option>General Rubbish Removal</option>
+                <option>Garden Waste Removal</option>
+                <option>Building Rubble Removal</option>
+                <option>Furniture Removal</option>
+                <option>House Clear-Out</option>
+                <option>Business Waste</option>
+                <option>Bulk Waste Removal</option>
+                <option>Property Clean-Up</option>
+
+              </select>
+
+            </div>
+
+
+            <div class="form-group">
+
+              <label>Estimated Load</label>
+
+              <select id="quoteLoad">
+
+                <option>Not sure</option>
+                <option>Small</option>
+                <option>Medium</option>
+                <option>Large</option>
+                <option>Very large</option>
+
+              </select>
+
+            </div>
+
+
+            <div class="form-group full">
+
+              <label>Location / Suburb</label>
+
+              <input
+                type="text"
+                id="quoteLocation"
+                placeholder="Example: Midrand"
+                required>
+
+            </div>
+
+
+            <div class="form-group full">
+
+              <label>Describe The Waste</label>
+
+              <textarea
+                id="quoteMessage"
+                placeholder="Tell us what needs to be removed..."
+                required></textarea>
+
+            </div>
+
+          </div>
+
+
+          <button type="submit" class="btn form-submit">
+
+            <i class="fab fa-whatsapp"></i>
+            Send Quote Request on WhatsApp
+
+          </button>
+
+        </form>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     BOOKING
+========================= -->
+
+<section class="booking" id="booking">
+
+  <div class="container">
+
+    <div class="section-heading">
+
+      <div class="small">Easy Booking</div>
+
+      <h2>Book A Waste Collection</h2>
+
+      <p>
+        Choose your service, preferred date and location.
+        Your request will open in WhatsApp for confirmation.
+      </p>
+
+    </div>
+
+
+    <div class="booking-box">
+
+
+      <div class="steps">
+
+        <div class="step">
+          <div class="step-number">1</div>
+          <strong>Request</strong>
+          <small>Tell us what you need</small>
+        </div>
+
+        <div class="step">
+          <div class="step-number">2</div>
+          <strong>Quote</strong>
+          <small>Receive your price</small>
+        </div>
+
+        <div class="step">
+          <div class="step-number">3</div>
+          <strong>Confirm</strong>
+          <small>Confirm the collection</small>
+        </div>
+
+        <div class="step">
+          <div class="step-number">4</div>
+          <strong>Collection</strong>
+          <small>We come to you</small>
+        </div>
+
+      </div>
+
+
+      <form id="bookingForm">
+
+        <div class="form-grid">
+
+
+          <div class="form-group">
+
+            <label>Full Name</label>
+
+            <input
+              type="text"
+              id="bookingName"
+              placeholder="Your name"
+              required>
+
+          </div>
+
+
+          <div class="form-group">
+
+            <label>Phone</label>
+
+            <input
+              type="tel"
+              id="bookingPhone"
+              placeholder="068 868 5355"
+              required>
+
+          </div>
+
+
+          <div class="form-group">
+
+            <label>Service</label>
+
+            <select id="bookingService" required>
+
+              <option value="">Choose service</option>
+              <option>General Rubbish Removal</option>
+              <option>Garden Waste Removal</option>
+              <option>Building Rubble Removal</option>
+              <option>Furniture Removal</option>
+              <option>House Clear-Out</option>
+              <option>Business Waste</option>
+              <option>Bulk Waste Removal</option>
+              <option>Property Clean-Up</option>
+
+            </select>
+
+          </div>
+
+
+          <div class="form-group">
+
+            <label>Preferred Date</label>
+
+            <input
+              type="date"
+              id="bookingDate"
+              required>
+
+          </div>
+
+
+          <div class="form-group">
+
+            <label>Preferred Time</label>
+
+            <select id="bookingTime">
+
+              <option>Morning</option>
+              <option>Midday</option>
+              <option>Afternoon</option>
+              <option>Flexible</option>
+
+            </select>
+
+          </div>
+
+
+          <div class="form-group">
+
+            <label>Property Type</label>
+
+            <select id="bookingProperty">
+
+              <option>House</option>
+              <option>Apartment</option>
+              <option>Office</option>
+              <option>Business</option>
+              <option>Construction Site</option>
+              <option>Other</option>
+
+            </select>
+
+          </div>
+
+
+          <div class="form-group full">
+
+            <label>Collection Address / Suburb</label>
+
+            <input
+              type="text"
+              id="bookingLocation"
+              placeholder="Enter collection location"
+              required>
+
+          </div>
+
+
+          <div class="form-group full">
+
+            <label>Waste Description</label>
+
+            <textarea
+              id="bookingMessage"
+              placeholder="Describe what needs to be collected..."
+              required></textarea>
+
+          </div>
+
+        </div>
+
+
+        <button class="btn form-submit" type="submit">
+
+          <i class="fab fa-whatsapp"></i>
+          Send Booking Request on WhatsApp
+
+        </button>
+
+      </form>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     GALLERY
+========================= -->
+
+<section class="gallery">
+
+  <div class="container">
+
+    <div class="section-heading">
+
+      <div class="small">Our Work</div>
+
+      <h2>Waste Removal & Clean-Up</h2>
+
+      <p>
+        Replace these sample images with your own Lee Waste
+        Management project photos when you have them.
+      </p>
+
+    </div>
+
+
+    <div class="gallery-grid">
+
+
+      <div class="gallery-item">
+
+        <img
+          src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=800&q=80"
+          alt="Property clean-up">
+
+        <div class="gallery-label">
+          Property Clean-Up
+        </div>
+
+      </div>
+
+
+      <div class="gallery-item">
+
+        <img
+          src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=80"
+          alt="Construction work">
+
+        <div class="gallery-label">
+          Construction Waste
+        </div>
+
+      </div>
+
+
+      <div class="gallery-item">
+
+        <img
+          src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80"
+          alt="Garden clean-up">
+
+        <div class="gallery-label">
+          Garden Waste
+        </div>
+
+      </div>
+
+
+      <div class="gallery-item">
+
+        <img
+          src="https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?auto=format&fit=crop&w=800&q=80"
+          alt="Cleaning service">
+
+        <div class="gallery-label">
+          Clean-Up Service
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     SERVICE AREAS
+========================= -->
+
+<section id="areas">
+
+  <div class="container">
+
+    <div class="section-heading">
+
+      <div class="small">Where We Operate</div>
+
+      <h2>Service Areas</h2>
+
+      <p>
+        Contact us to confirm availability for your suburb.
+      </p>
+
+    </div>
+
+
+    <div class="areas-grid">
+
+      <div class="area">
+        <i class="fas fa-location-dot"></i>
+        Johannesburg
+      </div>
+
+      <div class="area">
+        <i class="fas fa-location-dot"></i>
+        Pretoria
+      </div>
+
+      <div class="area">
+        <i class="fas fa-location-dot"></i>
+        Midrand
+      </div>
+
+      <div class="area">
+        <i class="fas fa-location-dot"></i>
+        Centurion
+      </div>
+
+      <div class="area">
+        <i class="fas fa-location-dot"></i>
+        Tembisa
+      </div>
+
+      <div class="area">
+        <i class="fas fa-location-dot"></i>
+        Gauteng
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     WHY US
+========================= -->
+
+<section class="why">
+
+  <div class="container">
+
+    <div class="section-heading">
+
+      <div class="small">Why Choose Us</div>
+
+      <h2>Waste Removal Made Easier</h2>
+
+      <p>
+        We focus on convenience, communication and reliable service.
+      </p>
+
+    </div>
+
+
+    <div class="why-grid">
+
+
+      <div class="why-card">
+
+        <i class="fas fa-truck-fast"></i>
+
+        <h3>We Come To You</h3>
+
+        <p>
+          No need to find a way to transport your waste yourself.
+          We arrange collection at your property.
+        </p>
+
+      </div>
+
+
+      <div class="why-card">
+
+        <i class="fas fa-comments"></i>
+
+        <h3>Easy Communication</h3>
+
+        <p>
+          Contact us by WhatsApp or phone to discuss your waste
+          removal requirements.
+        </p>
+
+      </div>
+
+
+      <div class="why-card">
+
+        <i class="fas fa-file-invoice-dollar"></i>
+
+        <h3>Quote Before Collection</h3>
+
+        <p>
+          Send us the details of your job so we can provide
+          a suitable quote.
+        </p>
+
+      </div>
+
+
+      <div class="why-card">
+
+        <i class="fas fa-house"></i>
+
+        <h3>Residential</h3>
+
+        <p>
+          Household rubbish, furniture, garden waste and
+          property clear-outs.
+        </p>
+
+      </div>
+
+
+      <div class="why-card">
+
+        <i class="fas fa-building"></i>
+
+        <h3>Commercial</h3>
+
+        <p>
+          Waste removal support for offices, shops and
+          other businesses.
+        </p>
+
+      </div>
+
+
+      <div class="why-card">
+
+        <i class="fas fa-leaf"></i>
+
+        <h3>Cleaner Spaces</h3>
+
+        <p>
+          We help you clear unwanted waste and get your
+          property back in order.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     REVIEWS
+========================= -->
+
+<section class="reviews">
+
+  <div class="container">
+
+    <div class="section-heading">
+
+      <div class="small">Customer Reviews</div>
+
+      <h2>What Customers Say</h2>
+
+      <p>
+        Add your real customer reviews here as your business grows.
+      </p>
+
+    </div>
+
+
+    <div class="review-grid">
+
+
+      <div class="review">
+
+        <div class="stars">
+          ★★★★★
+        </div>
+
+        <p>
+          "Very convenient service. They came to the property
+          and removed everything we needed cleared."
+        </p>
+
+        <strong>— Customer Review</strong>
+
+      </div>
+
+
+      <div class="review">
+
+        <div class="stars">
+          ★★★★★
+        </div>
+
+        <p>
+          "The WhatsApp communication made it easy to arrange
+          the waste collection."
+        </p>
+
+        <strong>— Customer Review</strong>
+
+      </div>
+
+
+      <div class="review">
+
+        <div class="stars">
+          ★★★★★
+        </div>
+
+        <p>
+          "Good option for clearing garden and household waste."
+        </p>
+
+        <strong>— Customer Review</strong>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     FAQ
+========================= -->
+
+<section id="faq">
+
+  <div class="container">
+
+    <div class="section-heading">
+
+      <div class="small">Questions</div>
+
+      <h2>Frequently Asked Questions</h2>
+
+      <p>
+        Everything you need to know before requesting collection.
+      </p>
+
+    </div>
+
+
+    <div class="faq">
+
+
+      <details>
+
+        <summary>
+          How do I get a quote?
+        </summary>
+
+        <p>
+          Send us your location, type of waste and approximate
+          amount. Photos can also be sent through WhatsApp.
+        </p>
+
+      </details>
+
+
+      <details>
+
+        <summary>
+          Do you collect garden waste?
+        </summary>
+
+        <p>
+          Yes. We can arrange removal of garden waste such as
+          branches, leaves, grass and other garden clean-up waste.
+        </p>
+
+      </details>
+
+
+      <details>
+
+        <summary>
+          Do you remove building rubble?
+        </summary>
+
+        <p>
+          Yes, building and renovation rubble can be quoted
+          depending on the amount and access to the site.
+        </p>
+
+      </details>
+
+
+      <details>
+
+        <summary>
+          Can you remove furniture?
+        </summary>
+
+        <p>
+          Yes. Contact us with details of the furniture and
+          collection location so we can provide a quote.
+        </p>
+
+      </details>
+
+
+      <details>
+
+        <summary>
+          Do you collect from businesses?
+        </summary>
+
+        <p>
+          Yes. We can discuss waste removal requirements for
+          businesses, offices and other commercial properties.
+        </p>
+
+      </details>
+
+
+      <details>
+
+        <summary>
+          Can I send photos on WhatsApp?
+        </summary>
+
+        <p>
+          Yes. Photos are useful because they can help us
+          understand the amount and type of waste before quoting.
+        </p>
+
+      </details>
+
+
+      <details>
+
+        <summary>
+          How do I book?
+        </summary>
+
+        <p>
+          Complete the booking form above or contact
+          Lee Waste Management Services directly on WhatsApp
+          at 068 868 5355.
+        </p>
+
+      </details>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     FINAL CTA
+========================= -->
+
+<section class="final-cta">
+
+  <div class="container">
+
+    <h2>Ready To Clear The Waste?</h2>
+
+    <p>
+      Contact Lee Waste Management Services today for a
+      waste removal quote.
+    </p>
+
+
+    <div class="hero-buttons" style="justify-content:center;">
+
+      <a class="btn btn-green"
+         href="https://wa.me/27688685355?text=Hello%20Lee%20Waste%20Management%20Services,%20I%20need%20a%20waste%20removal%20quote."
+         target="_blank">
+
+        <i class="fab fa-whatsapp"></i>
+        WhatsApp 068 868 5355
+
+      </a>
+
+
+      <a class="btn btn-white"
+         href="tel:0688685355">
+
+        <i class="fas fa-phone"></i>
+        Call Now
+
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     CONTACT
+========================= -->
+
+<section id="contact">
+
+  <div class="container">
+
+    <div class="section-heading">
+
+      <div class="small">Contact</div>
+
+      <h2>Let's Get Your Waste Sorted</h2>
+
+      <p>
+        Contact us for bookings, quotes and service enquiries.
+      </p>
+
+    </div>
+
+
+    <div class="contact-grid">
+
+
+      <div class="contact-card">
+
+        <i class="fab fa-whatsapp"></i>
+
+        <h3>WhatsApp</h3>
+
+        <p>Send your request directly.</p>
+
+        <a href="https://wa.me/27688685355" target="_blank">
+          068 868 5355
+        </a>
+
+      </div>
+
+
+      <div class="contact-card">
+
+        <i class="fas fa-phone"></i>
+
+        <h3>Call Us</h3>
+
+        <p>Speak to us about your collection.</p>
+
+        <a href="tel:0688685355">
+          068 868 5355
+        </a>
+
+      </div>
+
+
+      <div class="contact-card">
+
+        <i class="fas fa-clock"></i>
+
+        <h3>Bookings</h3>
+
+        <p>
+          Contact us to discuss available collection times.
+        </p>
+
+        <a href="#booking">
+          Book Collection
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
 <footer>
-  <p><strong>Lee Waste Management Services</strong></p>
-  <p>Reliable Waste Removal • We Come To You</p>
-  <p>WhatsApp / Call: 068 868 5355</p>
-  <p>© 2026 Lee Waste Management Services. All Rights Reserved.</p>
+
+  <div class="footer-grid">
+
+
+    <div>
+
+      <h3>Lee Waste Management Services</h3>
+
+      <p>
+        Reliable waste removal and property clean-up services.
+        We come to you.
+      </p>
+
+      <br>
+
+      <a href="https://wa.me/27688685355" target="_blank">
+
+        <i class="fab fa-whatsapp"></i>
+        068 868 5355
+
+      </a>
+
+    </div>
+
+
+    <div>
+
+      <h3>Services</h3>
+
+      <ul>
+
+        <li><a href="#services">Rubbish Removal</a></li>
+        <li><a href="#services">Garden Waste</a></li>
+        <li><a href="#services">Building Rubble</a></li>
+        <li><a href="#services">Furniture Removal</a></li>
+
+      </ul>
+
+    </div>
+
+
+    <div>
+
+      <h3>Quick Links</h3>
+
+      <ul>
+
+        <li><a href="#home">Home</a></li>
+        <li><a href="#prices">Prices</a></li>
+        <li><a href="#quote">Get Quote</a></li>
+        <li><a href="#booking">Book Collection</a></li>
+        <li><a href="#faq">FAQ</a></li>
+
+      </ul>
+
+    </div>
+
+
+    <div>
+
+      <h3>Service Areas</h3>
+
+      <ul>
+
+        <li>Johannesburg</li>
+        <li>Pretoria</li>
+        <li>Midrand</li>
+        <li>Centurion</li>
+        <li>Tembisa</li>
+        <li>Gauteng</li>
+
+      </ul>
+
+    </div>
+
+  </div>
+
+
+  <div class="footer-bottom">
+
+    © 2026 Lee Waste Management Services.
+    All Rights Reserved.
+
+  </div>
+
 </footer>
 
 
-<!-- FLOATING WHATSAPP -->
-<div class="whatsapp-label">
-  Chat with us
+<!-- =========================
+     FLOATING BUTTONS
+========================= -->
+
+<div class="floating-buttons">
+
+  <a
+    class="float-btn whatsapp"
+    href="https://wa.me/27688685355?text=Hello%20Lee%20Waste%20Management%20Services,%20I%20would%20like%20a%20quote."
+    target="_blank"
+    aria-label="WhatsApp">
+
+    <i class="fab fa-whatsapp"></i>
+
+  </a>
+
+
+  <a
+    class="float-btn call"
+    href="tel:0688685355"
+    aria-label="Call">
+
+    <i class="fas fa-phone"></i>
+
+  </a>
+
 </div>
 
-<a class="whatsapp-float"
-   href="https://wa.me/27688685355?text=Hello%20Lee%20Waste%20Management%20Services,%20I%20would%20like%20to%20get%20a%20waste%20removal%20quote."
-   target="_blank"
-   aria-label="Chat with Lee Waste Management Services on WhatsApp">
 
-  <i class="fab fa-whatsapp"></i>
+<!-- BACK TO TOP -->
 
+<a href="#home" class="back-top" aria-label="Back to top">
+  <i class="fas fa-arrow-up"></i>
 </a>
+
+
+<!-- =========================
+     JAVASCRIPT
+========================= -->
+
+<script>
+
+/* MOBILE MENU */
+
+function toggleMenu(){
+
+  const nav = document.getElementById("mainNav");
+
+  nav.classList.toggle("active");
+
+}
+
+
+/* CLOSE MOBILE MENU AFTER CLICK */
+
+document.querySelectorAll("#mainNav a").forEach(function(link){
+
+  link.addEventListener("click",function(){
+
+    document.getElementById("mainNav").classList.remove("active");
+
+  });
+
+});
+
+
+/* WHATSAPP NUMBER */
+
+const whatsappNumber = "27688685355";
+
+
+/* QUOTE FORM */
+
+document.getElementById("quoteForm").addEventListener("submit",function(e){
+
+  e.preventDefault();
+
+  const name =
+    document.getElementById("quoteName").value.trim();
+
+  const phone =
+    document.getElementById("quotePhone").value.trim();
+
+  const service =
+    document.getElementById("quoteService").value;
+
+  const load =
+    document.getElementById("quoteLoad").value;
+
+  const location =
+    document.getElementById("quoteLocation").value.trim();
+
+  const message =
+    document.getElementById("quoteMessage").value.trim();
+
+
+  const text =
+`Hello Lee Waste Management Services,
+
+I would like to request a waste removal quote.
+
+Name: ${name}
+Phone: ${phone}
+Service: ${service}
+Estimated Load: ${load}
+Location/Suburb: ${location}
+
+Waste Description:
+${message}
+
+Please send me a quote. Thank you.`;
+
+
+  window.open(
+    "https://wa.me/" +
+    whatsappNumber +
+    "?text=" +
+    encodeURIComponent(text),
+    "_blank"
+  );
+
+});
+
+
+/* BOOKING FORM */
+
+document.getElementById("bookingForm").addEventListener("submit",function(e){
+
+  e.preventDefault();
+
+
+  const name =
+    document.getElementById("bookingName").value.trim();
+
+  const phone =
+    document.getElementById("bookingPhone").value.trim();
+
+  const service =
+    document.getElementById("bookingService").value;
+
+  const date =
+    document.getElementById("bookingDate").value;
+
+  const time =
+    document.getElementById("bookingTime").value;
+
+  const property =
+    document.getElementById("bookingProperty").value;
+
+  const location =
+    document.getElementById("bookingLocation").value.trim();
+
+  const message =
+    document.getElementById("bookingMessage").value.trim();
+
+
+  const text =
+`Hello Lee Waste Management Services,
+
+I would like to request a waste collection booking.
+
+Name: ${name}
+Phone: ${phone}
+
+Service: ${service}
+Preferred Date: ${date}
+Preferred Time: ${time}
+Property Type: ${property}
+
+Collection Location:
+${location}
+
+Waste Description:
+${message}
+
+Please confirm availability and the quotation.
+
+Thank you.`;
+
+
+  window.open(
+    "https://wa.me/" +
+    whatsappNumber +
+    "?text=" +
+    encodeURIComponent(text),
+    "_blank"
+  );
+
+});
+
+
+/* SET MINIMUM BOOKING DATE TO TODAY */
+
+const today = new Date().toISOString().split("T")[0];
+
+document.getElementById("bookingDate").setAttribute(
+  "min",
+  today
+);
+
+
+/* CLOSE MENU WHEN CLICKING OUTSIDE */
+
+document.addEventListener("click",function(event){
+
+  const nav = document.getElementById("mainNav");
+  const menu = document.querySelector(".menu-btn");
+
+  if(
+    nav.classList.contains("active") &&
+    !nav.contains(event.target) &&
+    !menu.contains(event.target)
+  ){
+
+    nav.classList.remove("active");
+
+  }
+
+});
+
+</script>
 
 </body>
 </html>
-
-Important: I used 068 868 5355 everywhere, including the clickable WhatsApp and phone buttons. The WhatsApp link uses the South African international format "27688685355".
-
-If you want, we can next make this website look more premium like your other Lee businesses, add waste-removal prices, a booking/quote form, and a “Get Quote” WhatsApp button.
